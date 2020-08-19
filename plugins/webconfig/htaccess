@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule ^wap$ /wap/index.php
+RewriteRule ^wap/([a-z0-9-]*)/$ /wap/$1/
+RewriteRule ^wap/([A-Za-z0-9-]*)_([0-9]*).([a-z]*)$ /wap/?$1_$2.$3
+RewriteRule ^wap/([A-Za-z0-9-]*)/([0-9]*).([a-z]*)$ /wap/?$1/$2.$3
+RewriteRule ^wap/([A-Za-z0-9-]*)/([0-9]*)_([0-9]*).([a-z]*)$ /wap/?$1/$2_$3.$4
+RewriteRule ^$ index.php
+RewriteRule ^([A-Z].*)$ /?$1
+RewriteRule ^brandlist/([A-Za-z0-9-]*)$ /?brandlist/$1
+RewriteRule ^([A-Za-z0-9-]*)_([0-9]*).([a-z]*)$ /?$1_$2.$3
+RewriteRule ^([A-Za-z0-9-]*)/([0-9]*).([a-z]*)$ /?$1/$2.$3
+RewriteRule ^([A-Za-z0-9-]*)/([0-9]*)_([0-9]*).([a-z]*)$ /?$1/$2_$3.$4

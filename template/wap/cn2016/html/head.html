@@ -1,0 +1,41 @@
+<div class="all-elements">
+<div class="snap-drawers">
+  <div class="snap-drawer snap-drawer-left">
+    <div class="sidebar-header">
+   <a href="{zzz:wappath}" class="sidebar-logo"><img src="{zzz:waplogo}" alt="{zzz:sitetitle}"/></a>
+    </div>
+    <ul class="sidebar-navigation full-bottom" id="nav">
+      {zzz:navlist type=all}
+      <li {if:[navlist:sid]= {zzz:tsid}} class="selected" {end if}><a href="[navlist:link]"><em>[navlist:name]</em></a></li>
+      {/zzz:navlist}
+    </ul>   
+    <div class="decoration"></div>
+    <ul class="sidebar-navigation">     
+      <form method='post' name='product_myformsearch' action='{zzz:sitepath}wap/search/' >
+          <input type="text" class="inp_text" name='keys' value="{zzz:keys}" />
+          <button class="inp_button"  type='submit'  value=""/>搜索</button>
+        </form>
+    </ul>    
+    <div class="decoration"></div>
+   <div class="userlogin">{zzz:userlogin}</div>
+  </div>
+  <div class="snap-drawer snap-drawer-right">
+    <div class="sidebar-header"> <a href="{zzz:wappath}" class="sidebar-logo"><img src="{zzz:waplogo}" alt="{zzz:sitetitle}"/></a> </div>
+    <ul class="sidebar-navigation">
+      <li></li>
+      <li> <a href="tel:{zzz:tel}">电话：{zzz:tel} </a> </li>
+      <li> <a href="tel:{zzz:mobile}">手机：{zzz:mobile} </a> </li>
+      <li> <a href="mailto:{zzz:email}">邮箱：{zzz:email}</a> </li>
+      <li> <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">备案号：{zzz:siteicp} </a> </li>
+      <li> <a href="{zzz:siteurl}">网址：{zzz:siteurl}</a> </li>
+      <li> <a href="{zzz:sitepath}wap/?about/20_1.html " >联系我们</a> </li>     
+      <li> <a href="#" class="sidebar-close">关闭</a> </li>
+    </ul>
+    <div class="decoration"></div>
+    <p class="sidebar-copyright">© 2015-{formatdate:{zzz:nowtime},yyyy}<br>
+      {zzz:copyright} </p>
+  </div>
+</div>
+<!-- Page Content-->
+<div id="content" class="snap-content">
+<div class="header material-box"> <a href="#" class="header-nav-left open-left"><i class="fa fa-navicon"></i></a> <a href="#" class="header-nav-right open-right"><i class="fa fa-phone-square"></i></a> <a href="{zzz:wappath}" class="header-top-logo"><img src="{zzz:waplogo}" alt="{zzz:sitetitle}"/></a> </div>

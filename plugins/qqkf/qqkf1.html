@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="{zzz:plugpath}qqkf/qqkf1/qqkf1.css">
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='{zzz:sitepath}js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript">
+	$(function(){
+		$("#aFloatTools_Show").click(function(){
+			$('#divFloatToolsView').animate({width:'show',opacity:'show'},100,function(){$('#divFloatToolsView').show();});
+			$('#aFloatTools_Show').hide();
+			$('#aFloatTools_Hide').show();				
+		});
+		$("#aFloatTools_Hide").click(function(){
+			$('#divFloatToolsView').animate({width:'hide', opacity:'hide'},100,function(){$('#divFloatToolsView').hide();});
+			$('#aFloatTools_Show').show();
+			$('#aFloatTools_Hide').hide();	
+		});
+	});
+</script>
+</head>
+<body>
+<!--kefu-->
+<div id="floatTools" class="rides-cs" style="height:246px;">
+  <div class="floatL">
+  	<a style="display:block" id="aFloatTools_Show" class="btnOpen" title="查看在线客服" style="top:20px" href="javascript:void(0);">展开</a>
+  	<a style="display:none" id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" style="top:20px" href="javascript:void(0);">收缩</a>
+  </div>
+  <div id="divFloatToolsView" class="floatR" style="display: none;width: 140px;">
+    <div class="cn">
+      <h3 class="titZx">在线客服</h3>
+      <ul>
+        {zzz:qqkfs}
+         <li>
+            <a href="{zzz:weibo}" target="_blank">  <img class='weixing-ma' src='{zzz:weixin}'></a>
+             <div class="div_clear"></div>
+            关注我们           
+        </li>      
+       {zzz:tels}
+      </ul>
+    </div>
+  </div>
+</div>

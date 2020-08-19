@@ -1,0 +1,6 @@
+#pagesize {padding:8px;font-family: Noteworthy, Arial, sans-serif;    font-size: 14px;}
+#pagesize a,#pagesize span{float:left;margin-left:5px;padding:0 6px;min-width:17px;line-height:27px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:9pt;font-weight:500;color:#d4d4d4;text-align:center;text-decoration:none;border:1px solid #000;border-radius:3px; background:#26272c}
+#pagesize a:first-child{margin-left:0}
+#pagesize a{text-decoration:none;text-shadow:0 1px #000;background-clip:padding-box;border-color:rgba(0,0,0,.9);background-image:-webkit-linear-gradient(top,hsla(0,0%,100%,.04),hsla(0,0%,100%,0));background-image:linear-gradient(to bottom,hsla(0,0%,100%,.04),hsla(0,0%,100%,0));box-shadow:inset 0 0 0 1px hsla(0,0%,100%,.04),inset 0 1px hsla(0,0%,100%,.04),inset 0 -1px rgba(0,0,0,.15),0 1px 1px rgba(0,0,0,.1);-webkit-transition:.1s ease-out;transition:.1s ease-out;}
+#pagesize a:hover , #pagesize a.active{color:#eee;text-shadow:0 -1px #000; background-color:#000;border-color:#000 rgba(0,0,0,.65) rgba(0,0,0,.6);box-shadow:inset 0 1px rgba(0,0,0,.05),inset 0 2px 2px rgba(0,0,0,.3),0 1px hsla(0,0%,100%,.06)}
+#pagesize .next,#pagesize .prev{font-family:Noteworthy,Arial,sans-serif;font-size:14px}

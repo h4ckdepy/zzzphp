@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{zzz:sname}-{zzz:sitetitle}</title>
+<meta name="Keywords" content="{zzz:pagekeys}" >
+<meta name="Description" content="{zzz:pagedesc}">
+<meta name="author" content="http://www.zzzcms.com" />   
+<script src="{zzz:tempath}js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<script src="{zzz:tempath}js/img.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--head--> {zzz:top}
+<div class="s_banner2"></div> {zzz:template src=left.html}
+  <div class="sub_right">
+    <div class="news">
+      <div class="news_list"> 
+       {zzz:list size=5 sid={zzz:sid} order=order}
+        <dl>
+          <dt>[list:down]</dt>
+          <dd><a href="[list:link]" title="[list:title]">[list:title]</a></dd>
+          <div class="clear"></div>
+        </dl>
+      {/zzz:list}
+      </div>
+    {list:page len=3 style=3}
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<!--foot--> {zzz:foot}
+</body>
+</html>

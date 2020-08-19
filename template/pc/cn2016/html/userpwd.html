@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{zzz:sitetitle}{zzz:sitetitle2}</title>
+<meta name="Keywords" content="{zzz:sitekeys}" >
+<meta name="Description" content="{zzz:sitedesc}">
+<meta name="author" content="http://www.zzzcms.com" />
+<script src="{zzz:sitepath}js/jquery.min.js" type="text/javascript"></script>
+<script src="{zzz:sitepath}js/zzzcms.js"></script>
+<script src="{zzz:plugpath}layer/layer.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<style>
+.tips { margin: 15px; line-height: 28px; border: #FFDD8D 1px solid; background-color: #FFFBCC; color: #666666; padding: 0 9px; zoom: 1; }
+.tips span { color: #d94a4a; font-weight: bold; }
+.tab { border-bottom: 1px solid #D4D4D4; padding: 0 15px; line-height: 28px; height: 28px; }
+.tab ul { width: 550px; float: left; }
+.tab ul li { z-index: 1; border: #eee 1px solid; background-color: #eee; border-bottom: none; margin-bottom: -1px; margin-right: 4px; float: left; display: inline; text-align: center; position: relative; _width: 100px; }
+.tab ul li a { display: block; width: 88px; height: 27px; line-height: 27px; float: left; display: inline; color: #999; }
+.tab ul li.tabhover { z-index: 2; background: #fff; border: #D4D4D4 1px solid; border-bottom-color: #fff; }
+.tab ul li.tabhover a { color: #666; }
+.infotable td { height: 40px; line-height: 40px; border-bottom: 1px dashed #ccc }
+.infotable .red_btn2 { margin: 0px; }
+.infotable input, .infotable textarea, .infotable select { padding: 4px; font-size: 15px; outline: none; text-shadow: 0px 1px 0px #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border: 1px solid #ccc; -webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; -o-transition: .3s ease-in-out; background: #fff url(images/dt-10.gif) repeat-x left top; }
+.infotable input:focus, .infotable textarea:focus, .infotable select:focus { border: 1px solid #fafafa; -webkit-box-shadow: 0px 0px 6px #007eff; -moz-box-shadow: 0px 0px 5px #007eff; box-shadow: 0px 0px 5px #007eff; }
+/*表单*/
+</style>
+</head>
+
+<body>
+<!--head--> {zzz:top}
+<div class="s_banner1"></div>
+<div class="path_box">
+  <div class="path_con">
+    <div class="pc_title"><img src="{zzz:tempath}images/2_08.png" /><span>会员中心</span><i>Userinfo</i></div>
+    <div class="sub_title">会员中心</div>
+    <div class="pc_text"> 位置:会员中心</div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="contact_box">
+  <div class="contact_inf"> {zzz:template src=userleft.html}
+    <div class="talent rmain useredit" >
+      <h3>修改密码 <span class="f12 noBold c999">密码以加密方式存储</span></h3>
+      <div class="tips" style="position:relative; padding-left:30px;"><i class="icon icon-1"></i> 请不要设置简单密码 </div>
+      <form action="{zzz:sitepath}form/?editpwd" method="post">
+        <input type="hidden" value="[user:uid]" name="uid" id="uid" >
+        <table width="100%" class="infotable"  cellspacing="0" bgcolor="" >
+          <tbody>
+            <tr>
+              <td width="" height="25" bgcolor="" style="width: 70px;">用户名</td>
+              <td bgcolor="" width="">[user:name]</td>
+            </tr>
+            <tr>
+              <td width="" height="25" bgcolor="" style="width: 70px;">原密码</td>
+              <td bgcolor="" width=""><input name='password' type='text' id='password' autocomplete="off"></td>
+            </tr>
+            <tr>
+              <td width="" height="25" bgcolor="" style="width: 70px;">新密码</td>
+              <td bgcolor="" width=""><input name='newpassword' type='text' id='newpassword' autocomplete="off"></td>
+            </tr>
+            <tr>
+              <td width="" height="25" bgcolor="" style="width: 70px;">安全问题</td>
+              <td bgcolor="" width=""><input type="text" value="[user:question]" placeholder="找回密码必填" name="question" id="Question" autocomplete="off"></td>
+            </tr>
+            <tr>
+              <td width="" height="25" bgcolor="" style="width: 70px;">安全回答</td>
+              <td bgcolor="" width=""><input value="[user:answer]" placeholder="找回密码必填"  name="answer" id="Answer" class="input_text" autocomplete="off"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pl78">
+          <button type="submit" name="Submit" class="red_btn" style="width:200px;">修改密码</button>
+        </div>
+      </form>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--foot--> {zzz:foot}
+</body>
+</html>

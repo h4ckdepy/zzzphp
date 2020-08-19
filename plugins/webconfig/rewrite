@@ -1,0 +1,12 @@
+rewrite ^/wap$ /wap/index.php;
+rewrite ^/wap/([a-z0-9-]*)/$ /wap/$1/;
+rewrite ^/wap/([A-Za-z0-9-]*).([a-z]*)$ /wap/?$1.$2;
+rewrite ^/wap/([A-Za-z0-9-]*)_([0-9]*).([a-z]*)$ /wap/?$1_$2.$3;
+rewrite ^/wap/([A-Za-z0-9-]*)/([0-9]*).([a-z]*)$ /wap/?$1/$2.$3;
+rewrite ^/wap/([A-Za-z0-9-]*)/([0-9]*)_([0-9]*).([a-z]*)$ /wap/?$1/$2_$3.$4;
+rewrite ^/$ /index.php;
+rewrite ^/([A-Z].*)$ /?$1;
+rewrite ^/brandlist/([A-Za-z0-9-]*)$ /?brandlist/$1;
+rewrite ^/([A-Za-z0-9-]*)_([0-9]*).([a-z]*)$ /?$1_$2.$3;
+rewrite ^/([A-Za-z0-9-]*)/([0-9]*).([a-z]*)$ /?$1/$2.$3;
+rewrite ^/([A-Za-z0-9-]*)/([0-9]*)_([0-9]*).([a-z]*)$ /?$1/$2_$3.$4;

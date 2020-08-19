@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{zzz:sitetitle}-{zzz:sitetitle}</title>
+<meta name="description" content="{zzz:sitedesc}" />
+<meta name="Keywords" content="{zzz:sitekeys}" />
+<meta name="author" content="http://www.zzzcms.com" />   
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<link rel="stylesheet" type="text/css" href="{zzz:plugpath}template/gbook.css" />
+<script type="text/javascript" src="{zzz:tempath}js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="{zzz:sitepath}plugins/layer/layer.min.js"></script>
+</head>
+
+<body>
+{zzz:top}
+{zzz:template src=left.html}
+<div class="sub_right">
+  <div class="drive">
+      <div class="gbook"> {zzz:gbook size=10 order=order}
+      <ul>
+        <div class="face"><img src="[gbook:face]" height="100"></div>
+        <div class="gbookcontent">
+          <li><b>标题：</b>[gbook:title] <span>时间：{formatdate:[gbook:date],1}</span></li>
+          <li><b>姓名</b>：[gbook:gname] <span>IP：{hidestr:[gbook:ip],5} 电话：{hidestr:[gbook:tel],3}</span> </li>
+        <li class="content"><b>内容</b>：[gbook:content]</li>
+        </div>
+         {if:[gbook:ronoff]=1} <div class="admincontent">
+          <li><b>管理回复：</b>[gbook:rcontent]<span>[gbook:rname]　[gbook:rdate]</span></li>
+        </div>{end if}
+        <div class="clear"></div>
+      </ul>
+      {/zzz:gbook} </div>
+    {list:page len=3 style=3} </div>
+   {zzz:gbookform}
+  </div>
+</div>
+<div class="clear"></div>
+</div>
+
+<!--foot--> 
+
+{zzz:foot}
+</body>
+</html>

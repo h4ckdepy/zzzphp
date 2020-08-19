@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{zzz:sitetitle}-{zzz:sitetitle}</title>
+<meta name="Keywords" content="{zzz:pagekeys}" >
+<meta name="Description" content="{zzz:pagedesc}">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="applicable-device" content="mobile">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/framework.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/style.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/swipebox.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/animate.css">
+<script type="text/javascript" src="{zzz:tempath}js/jquery.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/jqueryui.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/framework.plugins.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/custom.js"></script>
+</head>
+
+<body>
+{zzz:top}
+<div class="container material-box">
+  <div class="sort"> <a class="share-link" href="#">{zzz:type sid={zzz:tsid}}[type:name]{/zzz:type}<span>+</span></a>
+    <ul>
+      {zzz:navlist sid={zzz:tsid}}
+      <li> <a href="[navlist:link]">[navlist:name]</a>      
+      </li>
+      {/zzz:navlist}
+    </ul>
+  </div>
+</div>
+<div class="container material-box">
+  <div class="adaptive-style">
+    <h4>产品展示</h4>
+    <a class="adaptive-two-activate active-adaptive-style" href="#"><i class="fa fa-th-large"></i></a> <a class="adaptive-one-activate" href="#"><i class="fa fa-navicon"></i></a> </div>
+  <div class="clear"></div>
+  <div class="decoration"></div>
+  <div class="portfolio-adaptive adaptive-two">
+  {zzz:list size=8 sid={zzz:sid} order=order}
+    <div class="adaptive-item"> <a href="[list:link]" alt="[list:name]"><img class="responsive-image" src="{cutpic:[list:pic],200,200}" alt="img"></a>
+      <h4 class="center-text btbg">[list:name]</h4>
+    </div>
+ {/zzz:list}
+  </div>
+  <div class="Page">{list:page len=5}</div>
+</div>
+{zzz:foot}
+</body>

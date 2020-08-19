@@ -1,0 +1,8 @@
+.jqis { position: relative; width:100% !important;}
+.jqis_header { background-image: url('dropdown_arrow.png'); width:100% !important; background-position: right center; background-repeat: no-repeat; cursor: pointer;background-color: #FFF;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;    padding: 1px 12px;}
+.jqis_header img { cursor: pointer; margin:1px}
+.jqis_dropdown { padding: 5px; position: absolute; overflow-x: hidden; overflow-y: scroll; }
+.jqis_dropdown img { width:44px; margin-right: 3px; cursor: pointer; float: left; }

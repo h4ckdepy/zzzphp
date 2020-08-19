@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0 }
+body { font-family: "微软雅黑"; background: #DAD9D7 }
+img { border: none }
+a * { cursor: pointer }
+ul, li { list-style: none }
+table { table-layout: fixed; }
+table tr td { word-break: break-all; word-wrap: break-word; }
+a { text-decoration: none; outline: none }
+a:hover { text-decoration: underline }
+.cf:after { content: "."; display: block; height: 0; font-size: 0; clear: both; visibility: hidden; }
+.cf { zoom: 1; clear: both }
+.bg { width: 100%; background: url("../images/01.jpg") no-repeat center top #DAD9D7; position: absolute; top: 0; left: 0; height: 600px; overflow: hidden }
+.cont { margin: 0 auto; width: 100%; line-height: 20px; }
+.c1 { min-height: 350px; text-align: center; background:url("../images/true.png") no-repeat center}
+.cont h1 { text-align: center; color: #555; font-size: 60px; font-weight: normal; height: 60px; margin-top: 10px; }
+.cont h2 { text-align: center; color: #555; font-size: 18px; font-weight: normal; height: 50px }
+.c1 .norecord{ padding-top:300px;}
+.c1 .list { width: 100%; margin: 0 auto; padding: 40px 0; }
+.c1 .list li{ width: 100%; line-height: 45px; height: 45px; border-bottom: 1px dashed #ddd;background:#DAD9D7}
+.c1 .list li a { display: block; width: 100%; height: 45px; line-height: 45px; overflow: hidden; text-align:center; color: #454545; }
+.c2 { height: 35px; text-align: center }
+.c2 a { display: inline-block; margin: 0 4px; font-size: 14px; height: 23px; color: #626262; padding-top: 1px; text-decoration: none; text-align: left }
+a.button {padding:6px 30px; background:#79be49; color:#fff}
+
+.c3 { height: 180px; text-align: center; color: #999; font-size: 12px }
+#bf { position: absolute; top: 269px; left: 0; width: 100% }
+.bf1 { margin: 0 auto; width: 99px; padding-left: 32px }
+.bd { height: 300px; overflow: hidden }
+#box { position: absolute; top: 165px; left: 0; width: 100%; text-align: center }
+.bf1 { margin: 0 auto; width: 99px; padding-left: 32px }

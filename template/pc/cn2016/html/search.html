@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关键词【{zzz:keys}】搜索结果-{zzz:sitetitle}</title>
+<meta name="Keywords" content="{zzz:pagekeys}" >
+<meta name="Description" content="{zzz:pagedesc}">
+<meta name="author" content="http://www.zzzcms.com" />   
+<script src="{zzz:tempath}js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<script src="{zzz:tempath}js/img.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--head--> {zzz:top}
+<div class="s_banner2"></div>
+<div class="path_box">
+  <div class="path_con">
+    <div class="pc_title"><img src="{zzz:tempath}images/2_08.png" /><span>站内搜索</span><i>search</i></div>
+    <div class="sub_title">关键词：{zzz:keys} 数量：{zzz:listcount}</div>
+    <div class="pc_text"> 位置{zzz:location}</div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="contact_box">
+  <div class="contact_inf">
+    <div class="sub_list">
+      <dl>
+        {zzz:navlist sid=5,6}
+        <dd {if:[navlist:sid]= {zzz:sid}}class="sub_on"{end if}> <a href="[navlist:link]">[navlist:name]</a></dd>
+        {/zzz:navlist}
+      </dl>
+    </div>
+    <div class="sub_right">
+      <div class="news">
+        <div class="news_list"> {zzz:search size=5 order=order}
+          <dl>
+            <dt>[search:date]</dt>
+            <dd><a href="[search:link]" title="[search:title]">[search:title]</a></dd>
+            <div class="clear"></div>
+          </dl>
+          {/zzz:search} </div>		 
+        {list:page len=3 style=1} </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!--foot--> {zzz:foot}
+</body>
+</html>

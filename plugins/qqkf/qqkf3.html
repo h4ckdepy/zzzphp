@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="{zzz:plugpath}qqkf/qqkf3/qqkf3.css" type="text/css" media="screen" />
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='{zzz:sitepath}js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<DIV id=floatTools class=qqkf3>
+  <DIV class=floatL> 
+  <A id="aFloatTools_Show" class="btnOpen" onclick="showqq3()" title="查看在线客服"  href="javascript:void(0);">展开</A> 
+  <A id="aFloatTools_Hide" class="btnCtn" onclick="hideqq3()"  title="关闭在线客服" href="javascript:void(0);">收缩</A> 
+  </DIV>
+  <DIV id="divFloatToolsView" class="floatR" style="display:none">
+    <DIV class=tp></DIV>
+    <DIV class=cn>
+      <UL>
+        <LI class=top>
+          <H3 class=titZx>QQ咨询</H3>
+        </LI>
+        <LI><SPAN class=icoZx>QQ咨询</SPAN> </LI>
+      	 {zzz:qqkfs}
+      </UL>
+      <UL class=webZx>
+        <LI class=webZx-in><A href="#" onclick="open_win()" ><IMG src="{zzz:plugpath}qqkf/qqkf3/images/right_float_web.png" border="0px"></A> </LI>
+      </UL>
+      <UL>
+        <LI> <SPAN class=icoTl>电话咨询</SPAN> </LI>
+      {zzz:tels}
+        <LI class=bot>
+          <H3 class=titDc><A href="javascript:void(0)" id="go-top">回到顶部</A></H3>
+        </LI>
+      </UL>
+    </DIV>
+  </DIV>
+</DIV>
+<script type="text/javascript" src="{zzz:plugpath}qqkf/qqkf3/qqkf3.js"></script>
+<script type="text/javascript">
+function open_win()
+{
+var w = 620;
+var h = 530;
+var left = (screen.width/2)-(w/2);
+var top = (screen.height/2)-(h/2);
+window.open("http://p.qiao.baidu.com/cps/chat?siteId=#####&userId=#####","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes,  copyhistory=yes, width="+w+", height="+h+", top="+top+", left="+left)
+}
+var hasshown=get_cookie("hasshown")
+if (hasshown=="1"){		
+   $("#divFloatToolsView").animate({width:'show',opacity:'show'},300,function(){$('#divFloatToolsView').show();});
+   $('#aFloatTools_Show').hide();
+   $('#aFloatTools_Hide').show();
+}else{	
+   $("#divFloatToolsView").animate({width:'hide', opacity:'hide'},100,function(){$('#divFloatToolsView').hide();});
+   $('#aFloatTools_Show').show();
+   $('#aFloatTools_Hide').hide();
+}
+function showqq3() {   
+     $("#divFloatToolsView").animate({width:'show',opacity:'show'},300,function(){$('#divFloatToolsView').show();});
+    $("#aFloatTools_Show").hide();
+    $("#aFloatTools_Hide").show();
+	addCookie('hasshown', 1, 1)
+}
+function hideqq3() {
+    $('#divFloatToolsView').animate({width:'hide', opacity:'hide'},100,function(){$('#divFloatToolsView').hide();});
+    $('#aFloatTools_Show').show();
+    $('#aFloatTools_Hide').hide();
+	addCookie('hasshown', 0, 1)
+}
+
+</script>

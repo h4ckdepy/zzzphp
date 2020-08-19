@@ -1,0 +1,29 @@
+<div class="path_box">
+  <div class="path_con">
+    <div class="pc_title"><img src="{zzz:tempath}images/2_08.png" /><span>{zzz:tsname}</span><i>{zzz:tsenname}</i></div>
+    <div class="sub_title">{zzz:sname}</div>
+    <div class="pc_text"> 位置{zzz:location}</div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="contact_box">
+<div class="contact_inf">
+<div class="sub_list">
+  <dl>
+    {zzz:navlist sid={zzz:tsid}}
+    <dd id="nav[navlist:id]"> <a href="[navlist:link]">[navlist:name]</a> </dd>
+    {if:[navlist:num]>0}
+    <ul>
+      {zzz:navlist1 sid=[navlist:id]}
+      <li id="nav[navlist1:id]"> <a href="[navlist1:link]">[navlist1:name]</a></li>
+      {/zzz:navlist1}
+    </ul>
+    {end if}
+    {/zzz:navlist}
+  </dl>
+</div>
+<script>
+$(function(){
+	$("#nav{zzz:sid}").addClass("sub_on")
+})
+</script> 

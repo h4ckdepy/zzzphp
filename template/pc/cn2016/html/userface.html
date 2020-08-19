@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{zzz:sitetitle}{zzz:sitetitle2}</title>
+<meta name="keywords" content="{zzz:sitekeys}" >
+<meta name="description" content="{zzz:sitedesc}">
+<meta name="author" content="http://www.zzzcms.com" />
+<script src="{zzz:sitepath}js/jquery.min.js" type="text/javascript"></script>
+<script src="{zzz:sitepath}js/zzzcms.js" type="text/javascript"></script>
+<script src="{zzz:plugpath}layer/layer.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<style>
+	.facelist{ float: left;  border: 1px solid #fff}
+	.facelist a img{border: 1px solid #fff;padding: 6px; width: 84px;}
+	.nocolour a img{ filter:grayscale(80%);}
+	.facelist.active a img{border: 1px solid #f00;}
+	.facelist a:hover img{filter: none}
+	</style>
+</head>
+
+<body>
+<!--head--> {zzz:top}
+<div class="s_banner1"></div>
+<div class="path_box">
+  <div class="path_con">
+    <div class="pc_title"><img src="{zzz:tempath}images/2_08.png" /><span>会员中心</span><i>userinfo</i></div>
+    <div class="sub_title">会员中心</div>
+    <div class="pc_text"> 位置:会员中心</div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="contact_box">
+  <div class="contact_inf"> {zzz:template src=userleft.html}
+    <div class="talent rmain userinfo">
+      <h3> 选择头像 </h3>
+      <div>
+		[user:facelist]
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--foot--> {zzz:foot}
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{zzz:sitetitle}-{zzz:sitetitle}</title>
+<meta name="Keywords" content="{zzz:pagekeys}" >
+<meta name="Description" content="{zzz:pagedesc}">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="applicable-device" content="mobile">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/framework.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/style.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/swipebox.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/animate.css">
+<script type="text/javascript" src="{zzz:tempath}js/jquery.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/jqueryui.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/framework.plugins.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/custom.js"></script>
+</head>
+
+<body>
+{zzz:top}
+
+<div class="container material-box">
+  <div class="sort"> <a class="share-link" href="#">[brand:title]<span>+</span></a>
+    <ul>
+      {zzz:brandlist order=order}
+      <li> <a href="[brandlist:link]">[brandlist:name]</a> </li>
+      {/zzz:brandlist}
+    </ul>
+  </div>
+</div>
+<div class="container material-box">
+  <div class="adaptive-style">
+    <h4>[brand:title]</h4><span><a href="[brand:url]" target="_blank">访问官网</a></span>
+  </div>
+  <div class="decoration"></div>
+  <div>[brand:content]</div>
+  <div class="slider-container material-box full-bottom">
+  <div class="homepage-slider">{pics:bid=[brand:id]}
+    <div>
+      <div class="homepage-slider-caption homepage-left-caption"> </div>
+      <img src="[pics:pic]" class="responsive-image"> </div>
+     {/pics} </div>
+</div>
+ <h4>品牌下属产品</h4>
+<ul class="gallery square-thumb">
+   {zzz:list size=4 brand=[brand:title] order=order}
+    <li> <a href="[list:link]"><img src="[list:pic]" alt="[list:title]" /></a>
+      <h4 class="center-text btbg">[list:title]</h4>
+    </li>
+   {/zzz:list} 
+  </ul>
+  <div class="Page">{list:page len=5}</div>
+</div>
+{zzz:foot}
+</body>

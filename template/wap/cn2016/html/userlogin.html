@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-touch-fullscreen" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no"/>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1"/>
+<title>会员登录</title>
+<link rel="stylesheet" type="text/css" href="{zzz:plugpath}template/css/base.css">
+<link rel="stylesheet" type="text/css" href="{zzz:plugpath}template/css/nctouch_member.css">
+<link rel="stylesheet" type="text/css" href="{zzz:plugpath}template/css/user.css"/>
+<script src='{zzz:sitepath}js/jquery.min.js' type='text/javascript'></script>
+<script src='{zzz:sitepath}js/zzzcms.js' type='text/javascript'></script>
+<link href='{zzz:plugpath}Validform/Validform.css' rel='stylesheet'/>
+<script src='{zzz:plugpath}Validform/Validform.min.js'></script>
+<script src='{zzz:plugpath}layer/mobile/layer.js'></script>
+</head>
+
+<header id="header">
+  <div class="header-wrap">
+    <div class="header-l"><a href="{zzz:sitepath}wap/"><i class="home"></i></a></div>
+    <div class="header-title">
+      <h1>登录</h1>
+    </div>
+    <div class="header-r"> <a id="header-nav" href="{zzz:sitepath}wap/?location=user&act=reg&type=[login:type]&backurl=[login:backurl]" class="text">注册</a> </div>
+  </div>
+</header>
+<div class="nctouch-main-layout fixed-Width">
+  <div class="nctouch-inp-con">
+    <form action="{zzz:sitepath}form/?login" method="post" class="registerform">
+      <input type="hidden" name="type" id="logintype" value="[login:type]">
+      <input type="hidden" name="backurl" value="[login:backurl]">
+      <ul class="form-box">
+        <li class="form-item">
+          <h4>账　户</h4>
+          <div class="input-box">
+            <input type="text" placeholder="请输入用户名/已验证手机" class="inp" name="username" id="username"  datatype='*5-18'  oninput="writeClear($(this));" autocomplete="off"/>
+            <span class="input-del"></span> </div>
+        </li>
+        <li class="form-item">
+          <h4>密　码</h4>
+          <div class="input-box">
+            <input type="password" placeholder="请输入登录密码" class="inp" name="password" id="password"  datatype='*5-18'  oninput="writeClear($(this));" autocomplete="off"/>
+            <span class="input-del"></span> </div>
+        </li>
+        {if:{conf:usercode}=1}
+        <li class="form-item">
+          <h4>验证码</h4>
+          <div class="input-box">
+            <input type="text" class="inp" name="code" id="imgcode"  datatype='*3-4'  oninput="writeClear($(this));" autocomplete="off"/>
+            <span class="input-del code"></span> </div>
+          <div class='imgcode'><img src='{zzz:sitepath}inc/imgcode.php' id='SeedCode' align='absmiddle' style='cursor:pointer;' border='0'  onClick="this.src+='?'+Math.random();"/> </div>
+        </li>
+        {end if}
+      </ul>
+      <div class="remember-form"><input id="usercheck"  name="usercheck" type="checkbox"  value="1" class="checkbox">
+		  <label for="usercheck">记住密码</label>
+		  <a class="forgot-password" href="{zzz:sitepath}wap/?location=user&act=forget">忘记密码？</a> </div>
+      <div class="error-tips"></div>
+      <div class="form-btn">
+        <input type="submit"  class="btn" value="登录"  disabled>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="joint-login">
+  <h2><span>合作账号登录</span></h2>
+  <ul> {if:check_dir('{zzz:sitepath}plug/qqlogin/')}<li><a class="qq" href="/plug/qqlogin/"></a></li>{end if} {if:check_dir('{zzz:sitepath}plug/wxlogin/')}<li><a class="weixin" href="/plug/wxlogin/"></a></li>{end if} {if:check_dir('{zzz:sitepath}plug/wblogin/')}<li><a class="weibo" href="/plug/wblogin/"></a></li>{end if}</ul>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$(".registerform").Validform({tiptype:function(msg,o,cssctl){if(!o.obj.is("form")){ if(o.type==3){ layer.open({content:msg,skin:'footer',time:1});}}},tipSweep:true,});
+	var logopanel=$(".joint-login ul").html()
+	if(logopanel.length<10) $(".joint-login").hide();
+	if(get_cookie('usercheck')==1){
+		$("#usercheck").attr("checked","checked");
+		$("#username").val(get_cookie('username'));
+		$("#password").val(get_cookie('userpass'));
+	}
+	if($("#logintype").val()=="")  $("#logintype").val('wap')
+	})</script>
+</body></html>

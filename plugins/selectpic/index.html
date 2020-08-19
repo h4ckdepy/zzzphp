@@ -1,0 +1,36 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>使用jQuery制作更好的selcet选择元素和CSS3 |jsfoot脚本特效 演示</title>
+</head>
+
+<body>
+
+<div id="page">
+	<h1>产品选择</h1>
+
+	<form method="post" action="">
+    
+    	<!-- We are going to use jQuery to hide the select element and replace it -->
+        
+		<select name="fancySelect" class="makeMeFancy">
+        
+        	<!-- Notice the HTML5 data attributes -->
+        
+	        <option value="0" selected="selected" data-skip="1">Choose Your Product</option>
+        	<option value="1" data-icon="images/iphone.png" data-html-text="iPhone 4&lt;i&gt;in stock&lt;/i&gt;">iPhone 4</option>
+        	<option value="2" data-icon="images/ipod.png" data-html-text="iPod &lt;i&gt;in stock&lt;/i&gt;">iPod</option>
+            <option value="3" data-icon="images/air.png" data-html-text="MacBook Air&lt;i&gt;out of stock&lt;/i&gt;">MacBook Air</option>
+            <option value="4" data-icon="images/imac.png" data-html-text="iMac Station&lt;i&gt;in stock&lt;/i&gt;">iMac Station</option>
+        </select>
+    </form>
+    
+</div>
+
+<link rel="stylesheet" type="text/css" href="selectpic.css" />
+<script src="../../js/jquery.min.js"></script>
+<script src="selectpic.js"></script>
+</body>
+</html>

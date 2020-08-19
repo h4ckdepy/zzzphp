@@ -1,0 +1,52 @@
+<style type="text/css">
+.advbox{width:100%;margin:0 auto;}
+.advbox .dt_toBig, .advbox .dt_toSmall{position:absolute;left:50%;margin:5px 0px 0px 460px;width:49px;height:21px; text-align:center; background:#FFF;cursor:pointer;}
+.dt_toBiga{ display:block; width:100%;height:60px;  background-repeat:no-repeat}
+.dt_toSmalla{ display:block;width:100%; height:[height]px; background-repeat:no-repeat}
+</style>
+<div class="advbox">
+	<div class="dt_small" style="display:none;">
+		<div class="dt_toBig" style="display:none;">+ 展开</div>
+		<a href="[link]" target="_blank" style="background:url([pic]) top center;" class="dt_toBiga"></a>
+	</div>	
+	<div class="dt_big">
+		<div class="dt_toSmall">× 关闭</div>
+		<a href="[link]" target="_blank" class="dt_toSmalla">[content]</a>
+	</div>	
+</div>
+<script type="text/javascript">
+function AdvClick(){
+	var a=1500;
+	var b=3*1000;
+	$(".dt_toSmall").click(function(){
+		$(".dt_small").delay(a).slideDown(a);
+		$(".dt_big").stop().slideUp(a);
+		$(".dt_toSmall").stop().fadeOut(0);
+		$(".dt_toBig").delay(a*2).fadeIn(0)
+	});$
+	(".dt_toBig").click(function(){
+		$(".dt_big").delay(a).slideDown(a);
+		$(".dt_small").stop().slideUp(a);
+		$(".dt_toBig").stop().fadeOut(0);
+		$(".dt_toSmall").delay(a*2).fadeIn(0)
+	})
+}
+function AdvAuto(){
+	if($(".dt_big").length>0){
+		var a=1500;
+		var b=3*1000;
+		$(".dt_big").delay(b).slideUp(a,function(){
+			$(".dt_small").slideDown(a);
+			$(".dt_toBig").delay(a).fadeIn(0)
+		});
+		$(".dt_toSmall").delay(b).fadeOut(0)
+	}
+}
+$(document).ready(function(){
+	AdvClick();
+});
+//顶部通览可展开收起效果
+if($("#actionimg").length>0){	
+	$("#actionimg").onload=AdvAuto();
+}
+</script>

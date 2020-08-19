@@ -1,0 +1,36 @@
+.msg_table{font-size:14px}
+.msg_table td{line-height:30px;text-align:left;padding:2px 0 2px 5px}
+.gbook ul{padding-bottom:30px;border-bottom:1px dashed #ccc;color:#666;font-size:12px}
+ .face{float:left;width:100px;height:100px;padding:10px;}
+.gbookform{ position:relative}
+.gbookform .face{position:absolute; left:500px;}
+.gbookcontent{float:right;width:660px;padding:10px}
+.gbookcontent li{line-height:24px}
+.gbookcontent span{float:right}
+.gbookcontent .content{background:#eee;padding:5px}
+.admincontent{float:left;width:775px;padding:10px;background:#fefefe;border:1px inset #eee}
+.admincontent span{float:right}
+.red_btn,.red_btn2{width:364px;height:30px;background-color:#e87708;cursor:pointer;margin-top:20px;font-size:14px;border:none;color:#fff;font-size:14px;transition:all .2s linear 0s;font-family:"微软雅黑";font-weight:700}
+.red_zi{font-size:12px;color:red;padding:0 5px}
+.form-inline{ display:inline-block}
+.gbooklist{ margin-bottom:20px}
+.gbookform input{height:30px;line-height:30px;padding-left:3px;border:1px solid #ccc;border-radius:2px;font-size:14px;width: 50%;}
+.gbookform textarea{width:95%;height:150px;border:1px solid #ccc;border-radius:2px;font-size:14px;transition:all .2s linear 0s;margin:5px 0}
+.gbookform input#imgcode{ width:35%}
+.gbookform .select> select{height:28px;line-height:28px;padding-left:3px;border:1px solid #ccc;border-radius:2px;font-size:14px;}
+
+.gbookform .radio { position: relative; height: 35px; display:inline-block} 
+.gbookform .radio> input { position: absolute; left: 0; top: 0; width: 20px; height:20px; opacity: 0; } 
+.gbookform .radio > label { padding:0 20px 0 30px; line-height: 20px; }
+.gbookform .radio > label:before { content: ''; position: absolute; left: 0px; top: 0px; display: inline-block; width:18px; height: 18px; border-radius: 50%; border: 1px solid #ddd; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; } 
+.gbookform .radio  > label:after { content: ''; position: absolute; left: 0px; top: 0px; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-top: 5px; margin-left:5px; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; }
+.gbookform .radio input[type='radio']:checked + label:before { border-color: #e87708; } 
+.gbookform .radio input[type='radio']:checked + label:after { background: #e87708; }
+
+.gbookform .checkbox { position: relative; height: 35px; display:inline-block} 
+.gbookform .checkbox> input { position: absolute; left: 0; top: 0; width: 20px; height:20px; opacity: 0; } 
+.gbookform .checkbox > label { padding:0 20px 0 30px; line-height: 20px; }
+.gbookform .checkbox > label:before { content: ''; position: absolute; left: 0px; top: 0px; display: inline-block; width:18px; height: 18px; border: 1px solid #ddd; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; } 
+.gbookform .checkbox  > label:after { content: ''; position: absolute; left: 0px; top: 0px; display: inline-block; width: 10px; height: 10px;margin-top: 5px; margin-left:5px; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; }
+.gbookform .checkbox input[type='checkbox']:checked + label:before { border-color: #e87708; } 
+.gbookform .checkbox input[type='checkbox']:checked + label:after { background: #e87708; }

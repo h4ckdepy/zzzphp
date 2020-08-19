@@ -1,0 +1,190 @@
+/*******************
+Paddings
+*******************/
+html body .p-0 { padding: 0px; }
+html body .p-10 { padding: 10px; }
+html body .p-15 { padding: 15px; }
+html body .p-20 { padding: 20px; }
+html body .p-30 { padding: 30px; }
+html body .p-l-0 { padding-left: 0px; }
+html body .p-l-10 { padding-left: 10px; }
+html body .p-l-20 { padding-left: 20px; }
+html body .p-r-0 { padding-right: 0px; }
+html body .p-r-10 { padding-right: 10px; }
+html body .p-r-20 { padding-right: 20px; }
+html body .p-r-30 { padding-right: 30px; }
+html body .p-r-40 { padding-right: 40px; }
+html body .p-t-0 { padding-top: 0px; }
+html body .p-t-10 { padding-top: 10px; }
+html body .p-t-20 { padding-top: 20px; }
+html body .p-t-30 { padding-top: 30px; }
+html body .p-b-0 { padding-bottom: 0px; }
+html body .p-b-5 { padding-bottom: 5px; }
+html body .p-b-10 { padding-bottom: 10px; }
+html body .p-b-20 { padding-bottom: 20px; }
+html body .p-b-30 { padding-bottom: 30px; }
+html body .p-b-40 { padding-bottom: 40px; }
+/*******************
+Margin
+*******************/
+html body .m-0 { margin: 0px; }
+html body .m-l-5 { margin-left: 5px; }
+html body .m-l-10 { margin-left: 10px; }
+html body .m-l-15 { margin-left: 15px; }
+html body .m-l-20 { margin-left: 20px; }
+html body .m-l-30 { margin-left: 30px; }
+html body .m-l-40 { margin-left: 40px; }
+html body .m-r-5 { margin-right: 5px; }
+html body .m-r-10 { margin-right: 10px; }
+html body .m-r-15 { margin-right: 15px; }
+html body .m-r-20 { margin-right: 20px; }
+html body .m-r-30 { margin-right: 30px; }
+html body .m-r-40 { margin-right: 40px; }
+html body .m-t-0 { margin-top: 0px; }
+html body .m-t-5 { margin-top: 5px; }
+html body .m-t-10 { margin-top: 10px; }
+html body .m-t-15 { margin-top: 15px; }
+html body .m-t-20 { margin-top: 20px; }
+html body .m-t-30 { margin-top: 30px; }
+html body .m-t-40 { margin-top: 40px; }
+html body .m-b-0 { margin-bottom: 0px; }
+html body .m-b-5 { margin-bottom: 5px; }
+html body .m-b-10 { margin-bottom: 10px; }
+html body .m-b-15 { margin-bottom: 15px; }
+html body .m-b-20 { margin-bottom: 20px; }
+html body .m-b-30 { margin-bottom: 30px; }
+html body .m-b-40 { margin-bottom: 40px; }
+
+html body .w10 { width: 10px; }
+html body .w15 { width: 15px; }
+html body .w20 { width: 20px; }
+html body .w30 { width: 30px; }
+html body .w40 { width: 40px; }
+html body .w50 { width: 50px; }
+html body .w60 { width: 60px; }
+html body .w70 { width: 70px; }
+html body .w80 { width: 80px; }
+html body .w90 { width: 90px; }
+html body .w100 { width: 100px; }
+html body .w120 { width: 120px; }
+html body .w150 { width: 150px; }
+html body .w200 { width: 200px; }
+html body .w300 { width: 300px; }
+html body .w400 { width: 400px; }
+.info_bar { margin-top: 5px }
+em { display: none }
+strong { color: red }
+button, input, select, textarea{ max-width:100%}
+#upload #divAddFiles { margin: 0 auto; width: 100%; border: 3px dashed #ccc; text-align: center }
+div #divAddFiles { background: #FFF; border: 0; padding: 0 }
+#upload .active { background: #23c6c8 }
+#sortlist .formtitle { width: 80px }
+#sortlist td { height: 30px; padding: 2px 8px }
+#sortlist .Postions { width: 50px; height: 24px }
+.navbar-fixed-top, .navbar-static-top { background: #2f4050 }
+.nav>li>a:focus, .nav>li>a:hover { text-decoration: none; background-color: #233646 }
+.nav>li.active>a { background: #233646 }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover { background: #233646 }
+.dropdown-menu { background: #2f4050 }
+.dropdown-menu>li>a { color: #fff }
+.input-order { width: 40px; text-align: center }
+#table { table-layout: fixed; }
+.table-striped .orderby { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAAkElEQVQoz7X QMQ5AQBCF4dWQSJxC5wwax1Cq1e7BAdxD5SL+Tq/QCM1oNiJidwox0355mXnG/DrEtIQ6azioNZQxI0ykPhTQIwhCR+BmBYtlK7kLJYwWCcJA9M4qdrZrd8pPjZWPtOqdRQy320YSV17OatFC4euts6z39GYMKRPCTKY9UnPQ6P+GtMRfGtPnBCiqhAeJPmkqAAAAAElFTkSuQmCC'); background-position: right; background-repeat: no-repeat; padding-right: 30px; }
+.table-striped .order1 { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZUlEQVQ4y2NgGAWjYBSggaqGu5FA/BOIv2PBIPFEUgxjB+IdQPwfC94HxLykus4GiD+hGfQOiB3J8SojEE9EM2wuSJzcsFMG4ttQgx4DsRalkZENxL+AuJQaMcsGxBOAmGvopk8AVz1sLZgg0bsAAAAASUVORK5CYII='); }
+.table-striped .order0 { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZ0lEQVQ4y2NgGLKgquEuFxBPAGI2ahhWCsS/gDibUoO0gPgxEP8H4ttArEyuQYxAPBdqEAxPBImTY5gjEL9DM+wTENuQahAvEO9DMwiGdwAxOymGJQLxTyD+jgWDxCMZRsEoGAVoAADeemwtPcZI2wAAAABJRU5ErkJggg=='); }
+#upload { padding: 0 }
+.btn i { font-size: 14px; }
+#btns { width: 150px; height: 205px; float: left; margin: 10px; overflow: hidden; background: #eee }
+.filelist a { width: 140px; height: 130px; display: block; text-align: center; overflow: hidden; border: 5px #eee solid; margin: 0 5px }
+.filelist a img { width: 130px; height: auto }
+.info_bar input { width: 140px; margin: 0 5px; padding: 0 5px }
+.w_act { width: 190px; margin: 0 5px }
+.time { width: 100px }
+.info_bar .w_name { display: none }
+.pagenavi a { color: inherit; background: #fff; border: 1px solid #e7eaec; display: inline-block; font-size: 14px; font-weight: 400; height: 34px; line-height: 14px; text-align: center; white-space: nowrap; vertical-align: middle; padding: 8px 12px }
+.pagenavi a.active { box-shadow: 0 2px 5px rgba(0,0,0,.15) inset; margin-left: -1px; border-radius: 0; color: inherit; border: 1px solid #d2d2d2 }
+.S_Level { background-color: transparent; background-repeat: no-repeat; background-attachment: scroll; background-image: url(../images/ctree.png); display: inline-block; float: left; height: 23px; line-height: 23px; width: 33px; text-indent: -9999px }
+.Level0, .Level1 { background-position: 0 -229px;}
+.onLevel1 { background-position: 0 -253px }
+a.active i { background-position: 0 -322px }
+.Level2 { background-position: 0 -184px }
+.onLevel2 { background-position: 0 -92px; margin-left: 0px }
+.onLevel3 { background-position: 0 -92px; margin-left: 6px; width:27px}
+.Level3 { background-position: 0 -184px; margin-left: 6px ; width:27px}
+.Level4 { background-position: 0 -184px; margin-left: 12px; width:21px}
+.Level5 { background-position: 0 -184px; margin-left: 12px; width:21px}
+.Level6 { background-position: 0 -184px; margin-left: 12px; width:21px}
+.Levelend {background-position: 0 -207px }
+.fa-about:before { content: "\f108" }
+.fa-brand:before { content: "\f0c0" }
+.fa-news:before { content: "\f1ea" }
+.fa-product:before { content: "\f1b3" }
+.fa-photo:before { content: "\f03e" }
+.fa-case:before { content: "\f200" }
+.fa-down:before { content: "\f019" }
+.fa-job:before { content: "\f0c0" }
+.fa-video:before { content: "\f03d" }
+.fa-links:before { content: "\f0c1" }
+.fa-other:before { content: "\f085" }
+.fa-gbook:before { content: "\f044" }
+.folder-list span { margin-top: -20px }
+#folder1 { margin-left: 10px }
+#folder2 { margin-left: 20px }
+#folder3 { margin-left: 30px }
+.tabletitle{ width: 160px }
+.tableedit { width: 110px }
+.tableurl { width: 110px }
+.tablename { width: 100px }
+.tabletime { width: 100px }
+.tabletype { width: 75px }
+.tableorder { width: 50px}
+.tableonoff { width: 50px}
+.tableid { width: 30px }
+@media (max-width:768px) {
+.tabletitle { width: 120px }
+.tabletime { width: 50px }
+}
+input.title { width: 80%; }
+input.title:focus {width: 100%; transition: 0.3s; -moz-transition: 0.3s; }
+.file { border: 1px solid #e7eaec; padding: 0; background-color: #fff; position: relative; height:100px }
+.file:hover{border: 1px solid #18a689;}
+.file-button { text-align: center; border-top: 1px solid #eee; padding-top: 5px; bottom: 10px; left: 30px; }
+.file-manager .hr-line-dashed { margin: 15px 0 }
+.file .icon, .file .image { overflow: hidden;float:left; width:100px; height:100px;}
+.file .icon, .file .image img{width:98px; height:98px; padding:0px;}
+.file .icon { padding: 15px 10px; text-align: center }
+.file-control { color: inherit; font-size: 11px; margin-right: 10px }
+.file-control.active { text-decoration: underline }
+.file .icon i { font-size: 70px; color: #dadada }
+.file .file-name { padding: 10px;  position: absolute; overflow: hidden; width:100%; padding-left:100px;}
+.file .file-name ul{ float:left; width:50%; padding:0px; margin:0px}
+.file dt { float: left; width:20%; overflow: hidden;text-align: right; text-overflow: ellipsis; white-space: nowrap;  padding:5px 10px;}
+.file dd { float: left; width:80%; padding:5px 0; }
+.file dl { margin-left:20%;}
+.file dd input { width:100%}
+.file-name small { color: #676a6c }
+.corner.active{    border-right: .6em solid #18a689;    border-bottom: .6em solid #18a689;}
+
+#systag a { margin: 0 5px 0 0; }
+#systag a.selected { background-color: #18a689; border-color: #18a689; color: #FFF; }
+#systag a.selected:before { font: normal normal normal 14px/1 FontAwesome; content: "\f00d"; padding-right: 5px }
+#downpercent { margin-left: -37px; color: #fff; }
+#status p { font-size: 12px; padding: 2px; margin: 0px; border-bottom: 1px solid #eee }
+#status span { float: right }
+.passico { position: absolute; top: 0px;  display: block; width: 34px; height: 34px; color:#ccc;padding: 10px; }
+.eye{  right:35px; }
+.toques, .topass{ right:15px; }
+.xintiao { animation: myfirst 1s infinite; }
+@keyframes myfirst { 0% {transform: scale(1, 1);}30% {transform: scale(1.3, 1.3);}100% {transform: scale(1, 1);}}
+.tianqi{ position:relative; margin:15px 5px; height:87px;}
+.onoff{ position:absolute; right:3px; top:6px; }
+.onoff a{padding:3px 6px}
+.onoff:hover a{ background:#1ab394; color:#fff;}
+/* clock */
+.clock{width:100%;margin:0 auto;padding:5px 20px; background:#dff0d8; border:1px solid #d6e9c6;border-radius: 4px;   margin: 10px 0 18px 0;}
+.clock #Date{font-size:14px;text-align:left;}
+.clock ul{width:100%;margin:0 auto;padding:0px;list-style:none;text-align:left;}
+.clock ul li{display:inline;font-size:36px;text-align:left;font-family:'BebasNeueRegular',Arial, Helvetica, sans-serif; color:#3c763d}
+#point{position:relative;-moz-animation:mymove 1s ease infinite;-webkit-animation:mymove 1s ease infinite;}
+@-webkit-keyframes mymove{0%{opacity:1.0;text-shadow:0 0 20px #00c6ff;}50%{opacity:0;text-shadow:none;}100%{opacity:1.0;text-shadow:0 0 20px #00c6ff;}}
+@-moz-keyframes mymove{0%{opacity:1.0;text-shadow:0 0 20px #00c6ff;}50%{opacity:0;text-shadow:none;}100%{opacity:1.0;text-shadow:0 0 20px #00c6ff;}}

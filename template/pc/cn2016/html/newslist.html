@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{zzz:sname}-{zzz:sitetitle}</title>
+<meta name="Keywords" content="{zzz:pagekeys}" >
+<meta name="Description" content="{zzz:pagedesc}">
+<meta name="author" content="http://www.zzzcms.com" />   
+<script src="{zzz:sitepath}js/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<script src="{zzz:tempath}js/img.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--head--> {zzz:top}
+<div class="s_banner2"></div> {zzz:template src=left.html}
+  <div class="sub_right">
+    <div class="news">
+      <div class="ib_con">
+        <div class="home_plist">
+          <div class="rollBox" {>
+            <div class="LeftBotton" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"></div>
+            <div class="Cont" id="ISL_Cont">
+              <div class="ScrCont">
+                <div id="List1"> 
+                  <!-- 图片列表 begin --> 
+                 {zzz:content sid={zzz:sid} num=10 order=ispic}
+                  <dl class="pic">
+                    <dt><a href="[content:link]" title="[content:title]"><img src="[content:pic]" onload="DrawImage(this,254,155)"/></a></dt>
+                    <dd><a href="[content:link]" title="[content:title]">[content:title]</a></dd>
+                  </dl>
+                  {/zzz:content}
+                  <!-- 图片列表 end --> 
+                </div>
+                <div id="List2"></div>
+              </div>
+            </div>
+            <div class="RightBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"></div>
+          </div>
+          <script language="javascript" type="text/javascript" src="{zzz:tempath}js/img_gd.js"></script> 
+        </div>
+      </div>
+
+      <div class="news_list"> 
+       {zzz:list size=8 sid={zzz:sid} order=order}
+        <dl>
+          <dt>{formatdate:[list:time],16}</dt>
+          <dd><a href="[list:link]" title="[list:title]">[list:title]</a></dd>
+          <div class="clear"></div>
+        </dl>
+      {/zzz:list}
+      </div>
+    {list:page len=3 style=1}
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<!--foot--> {zzz:foot}
+</body>
+</html>

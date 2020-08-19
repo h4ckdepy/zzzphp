@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template version="0.1">
+  <ScreenShot>index.png</ScreenShot>
+	<name>官方中文CN2016模版</name>
+	<demo>http://demo.zzzcms.com/</demo>
+	<author>zzz团队</author>
+	<time>2016年6月</time>
+	<website>http://www.zzzcms.com/</website>
+	<description>zzz官方中文默认模版</description>
+</template>

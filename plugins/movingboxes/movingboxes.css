@@ -1,0 +1,27 @@
+
+#kehu{width:900px}
+#kehu >li{width:300px; float:left; }
+#kehu >li img{}
+.mb-wrapper{margin:0 auto 20px;position:relative;left:0;top:50px; height:220px}
+.mb-slider,.mb-scroll{width:100%;overflow:hidden;margin:0 auto;padding:0;position:relative;left:0;top:0}
+.mb-active-slider{border-color:#333}
+.mb-slider .mb-panel{display:block;cursor:pointer;float:left;list-style:none}
+.mb-panel a{outline:0}
+.mb-inside{ margin:0 auto;text-align: center;}
+.mb-inside span{ display:block}
+.mb-slider .mb-panel.current{cursor:auto}
+.mb-inside *{max-width:100%}
+a.mb-scrollButtons{display:block;width:45px; height:45px;background:transparent url(arrows.png) no-repeat;position:absolute;margin-top:0px; top:50px;cursor:pointer;text-decoration:none;outline:0;border:0;}
+a.mb-scrollButtons.mb-left{background-position:left top;left:-45px}
+a.mb-scrollButtons.mb-right{background-position:right top;right:-45px}
+a.mb-scrollButtons.mb-left:hover{background-position:left bottom}
+a.mb-scrollButtons.mb-right:hover{background-position:right bottom}
+a.mb-scrollButtons.disabled{display:none}
+.mb-controls{margin:0 auto;text-align:center;position:absolute; z-index:100; width:100%;}
+.mb-controls a{color:#666;font:20px/2.2 Georgia, Serif;display:inline-block;text-decoration:none;padding:2px;margin:0 5px 0 0;text-align:center;outline:0}
+.mb-panel{}
+.mb-controls a:hover{color:black}
+.mb-controls a.current{color:#ff0000}
+.main-nav{display:block; text-align:center; border-bottom:2px solid #a71700;margin:0 0 20px 0;padding:0 0 10px 0}
+.main-nav a{text-decoration:none;color:#3e63ec;font-size:18px;margin:0 8px}
+.main-nav a:hover{color:black;border-bottom:2px solid black}

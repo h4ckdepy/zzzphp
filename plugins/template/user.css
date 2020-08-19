@@ -1,0 +1,28 @@
+.register{ background:url(images/bg.jpg) right top no-repeat; float:left; width:100%; max-width:1200px; height:474px;}
+.leftregister{ width:50%; float:left;}
+.registerbutton{    float: right;    margin-top: 200px;    margin-right: 100px;}
+.registerbutton a{ padding:6px 30px; margin:10px 0 20px 0; background:#787878; color:#fff; border:0px; display:block; text-decoration:none; text-align:center}
+.registerbutton a:hover{}
+.registerbutton .nowreg{ background:#0580df}
+.registerbutton h3{ font-size:18px;}
+.rightregister{ float:right; margin:60px 130px 0 0}
+.rightregister h2{ font-size:18px; padding:0 0 15px 40px; color:#666; border-bottom:1px solid #ccc; margin-bottom:20px; background:url(images/user.png) 5px 5px no-repeat}
+.registerform{margin-bottom:40px}
+.registerform li{ position:relative; list-style:none}
+.registerform .need{width:10px;color:#b20202}
+.registerform .inputxt,.registerform textarea{border:1px solid #a5aeb6;width:196px;padding:6px 5px}
+.registerform .imgcode{ position:absolute; left:215px; top:0px; margin:0; padding:0px; height:28px; overflow:hidden;}
+.registerform .imgcode img{}
+.registerform #imgcode, .registerform #smscode, .registerform #sedcond{ width:95px;}
+.registerform #sedcond{ width:95px; height:28px; background-color: #1ab394;   border-color: #1ab394; border:0px; color:#fff;cursor: pointer;}
+.registerform #sedcond:hover{background-color: #18a689;    border-color: #18a689;    color: #FFF;}
+.registerform textarea{height:75px}
+.registerform label{margin:0 15px 0 4px}
+.registerform .tip{line-height:20px;color:#5f6a72}
+.registerform select{width:202px}
+.registerformalter select{width:124px}
+.Validform_checktip{margin:4px 0 8px 100px}
+.formsub label{display:inline-block;width:80px;text-align:right}
+.action{padding-left:20px}
+.action input{padding:5px 30px; margin:0 10px;vertical-align:middle; border:0px;}
+.action input:first-child{background:#0580df;color:#fff; }

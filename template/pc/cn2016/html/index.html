@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{zzz:sitetitle}{zzz:sitetitle2}</title>
+<meta name="Keywords" content="{zzz:sitekeys}" >
+<meta name="Description" content="{zzz:sitedesc}">
+<meta name="author" content="http://www.zzzcms.com" />
+<script src="{zzz:tempath}js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<script type="text/javascript">    //小海报
+    $(function () {
+        $(".banner .in_business ul li dd").hover(function () {
+            $(".banner .in_business ul li dd").addClass('hf');
+            $(this).removeClass('hf');
+        }, function () {
+            $(".banner .in_business ul li dd").removeClass('hf');
+        });
+    });
+</script>
+</head>
+<body>
+{zzz:top}
+<div class="banner">
+  <div class="wrapper">
+    <div class="wy-content">
+      <div class="wy-mod-banner">
+        <div id="_banners" class="banners"> {zzz:slidelist type=A}
+          <div class="banner "><a href="[slidelist:link]" title="[slidelist:title]" id="slide[slidelist:id]" name="[slidelist:name]"><img src="[slidelist:pic]" width="[slidelist:width]"/></a></div>
+          {/zzz:slidelist} </div>
+        <div id="_focus" class="focus"> <a data-index="0" href="#"  class='on'> <span class="bg-b"></span> <span class="inner"></span> </a> <a data-index="1" href="#" > <span class="bg-b"></span> <span class="inner"></span> </a> <a data-index="2" href="#" > <span class="bg-b"></span> <span class="inner"></span> </a> </div>
+      </div>
+    </div>
+  </div>
+  <meta name="author" content="http://www.zzzcms.com" />
+  <script src="{zzz:tempath}js/jquery-1.8.3.min.js" type="text/javascript"></script> 
+  <script src="{zzz:tempath}js/banner_js.js" type="text/javascript"></script> 
+</div>
+<div class="in_bynews"> <img src="{zzz:tempath}images/1_31.jpg" /> </div>
+<div class="in_newsbox">
+  <div class="in_news">
+    <div class="inf_head"> {zzz:type sid=2}
+      <h3>[type:name]</h3>
+      <a href="[type:link]"></a> {/zzz:type} </div>
+    <div class="inf_con">
+      <div class="inf_title"> {zzz:aboutlist sid=2}
+        <p><img src="{zzz:tempath}images/indexabout.png" /></p>
+      </div>
+      <dl class="inf_list">
+        {leftstr:[aboutlist:info],500}
+      </dl>
+      {/zzz:aboutlist} </div>
+  </div>
+  <div class="in_news in_left">
+    <div class="inf_head2"> {zzz:type sid=5}
+      <h3>[type:name]</h3>
+      <a href="[type:link]"></a>{/zzz:type} </div>
+    <div class="inf_con">
+      <div class="inf_title">
+        <p><img src="{zzz:tempath}images/indexnews.jpg" /></p>
+      </div>
+      <dl class="inf_list">
+        {zzz:content type=news num=10 order=order}
+        <dd><a href="[content:link]" title="[content:title]"><font color="[content:color]">{leftstr:[content:title],15}</font><span class="fr">[content:date]</span></a></dd>
+        {/zzz:content}
+      </dl>
+    </div>
+  </div>
+  <div class="in_news in_left">
+    <div class="inf_head3"> {zzz:sort sid=3}
+      <h3>[sort:title]</h3>
+      <a href="[sort:link]"></a> {/zzz:sort} </div>
+    <div class="inf_con">
+      <div class="inf_title">
+        <p><img src="{zzz:tempath}images/indexsystem.png" /></p>
+      </div>
+      <dl class="inf_list content content-3">
+        {zzz:aboutlist sid=3}{leftstr:[aboutlist:info],500} {/zzz:aboutlist}
+      </dl>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="in_line"><img src="{zzz:tempath}images/1_24.jpg" /></div>
+<div class="in_focus">
+  <div class="in_fctitle"><span>产品列表</span></div>
+  <ul id="kehu">
+    {zzz:content sid=9,11，12 num=10 order=ispic}
+    <li><a href="[content:link]"><img src="[content:pic]" height="120"/></a> <span><font color="[content:color]">[content:title]</font></span> </li>
+    {/zzz:content}
+  </ul>
+  <div class="clear"></div>
+</div>
+<link type="text/css" href="{zzz:sitepath}plugins/movingboxes/movingboxes.css" rel="stylesheet">
+<script type="text/javascript" src="{zzz:sitepath}plugins/movingboxes/jquery.movingboxes.js"></script> 
+<script type="text/javascript">
+	$(function(){
+		$('#kehu').movingBoxes({
+			startPanel   : 1,       // 从第一个li开始
+			reducedSize  : 1,      // 缩小到原图50%的尺寸
+			wrap         : true,   // 无缝循环
+		
+			navFormatter : function(){ return "&#9679;"; } // 指示器格式，为空即会显示123
+		});
+	});
+</script> 
+
+<!--左右滚动客户--> 
+<!--Scrollbar-->
+<link href="{zzz:plugpath}Scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script src="{zzz:plugpath}Scrollbar/jquery.mousewheel.min.js"></script> 
+<script src="{zzz:plugpath}Scrollbar/jquery.mCustomScrollbar.min.js"></script> 
+<script src="{zzz:plugpath}Scrollbar/jquery-ui-1.10.4.min.js"></script> 
+<script type='text/javascript'>
+   (function($){
+			$(window).load(function(){				
+				$(".inf_list").mCustomScrollbar();				
+			});
+		})(jQuery);
+</script>
+<style>
+.inf_list{width:345px;height:150px;overflow:auto;}
+</style>
+<!--Scrollbar--> 
+{zzz:foot}
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <!--start-rewrite-->
+    <rewrite>
+      <rules>
+		  <!--WAP首页-->  
+		 <rule name="WapIndex">
+          <match url="^$wap" />
+          <action type="Rewrite" url="/wap/index.php" />
+        </rule>	
+		 <!--通用-->
+        <rule name="Wapurl">
+          <match url="^wap/([a-z0-9-]*)/$" />
+          <action type="Rewrite" url="/wap/{R:1}/" />
+        </rule>
+		 <!--通用-->
+        <rule name="Wapsort">
+          <match url="^wap/([A-Za-z0-9-]*)siteext$" />
+          <action type="Rewrite" url="/wap/?{R:1}siteext" />
+        </rule>
+		 <rule name="Wapsorts">
+          <match url="^wap/([A-Za-z0-9-]*)_([0-9]*)siteext$" />
+          <action type="Rewrite" url="/wap/?{R:1}_{R:2}siteext" />
+        </rule>
+        <!--通用-->
+        <rule name="Wapcontent">
+          <match url="^wap/(about|brand|content|list|brandlist|taglist|gbook)/([^\s]+)$" />
+          <action type="Rewrite" url="/wap/?{R:1}/{R:2}" />
+        </rule>
+        <!--分页-->
+        <rule name="Waplist">
+          <match url="^wap/([A-Za-z0-9-]*)/([0-9]*)_([0-9]*)siteext$" />
+          <action type="Rewrite" url="/wap/?{R:1}/{R:2}_{R:3}siteext" />
+        </rule>	
+		  
+        <!--PC首页-->  
+		 <rule name="Index">
+          <match url="^$" />
+          <action type="Rewrite" url="index.php" />
+        </rule>	
+		 <!--通用-->
+        <rule name="url">
+          <match url="^([a-z0-9-]*)/$" />
+          <action type="Rewrite" url="/{R:1}/" />
+        </rule>
+		 <!--通用-->
+        <rule name="sort">
+          <match url="^([A-Za-z0-9-]*)siteext$" />
+          <action type="Rewrite" url="/?{R:1}siteext" />
+        </rule>
+		<rule name="sorts">
+          <match url="^([A-Za-z0-9-]*)_([0-9]*)siteext$" />
+          <action type="Rewrite" url="/?{R:1}_{R:2}siteext" />
+        </rule>
+        <!--通用-->
+        <rule name="content">
+          <match url="^(about|brand|content|list|brandlist|taglist|gbook)/([^\s]+)$" />
+          <action type="Rewrite" url="/?{R:1}/{R:2}" />
+        </rule>
+        <!--分页-->		
+        <rule name="list">
+          <match url="^([A-Za-z0-9-]*)/([0-9]*)_([0-9]*)siteext$" />
+          <action type="Rewrite" url="/?{R:1}/{R:2}_{R:3}siteext" />
+        </rule>	
+		  
+      </rules>
+    </rewrite>
+    <!--end-rewrite-->
+  </system.webServer>
+</configuration>

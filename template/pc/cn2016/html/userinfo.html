@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{zzz:sitetitle}{zzz:sitetitle2}</title>
+<meta name="keywords" content="{zzz:sitekeys}" >
+<meta name="description" content="{zzz:sitedesc}">
+<meta name="author" content="http://www.zzzcms.com" />
+<script src="{zzz:sitepath}js/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/styles.css" />
+<style>
+.tips { margin: 15px; line-height: 28px; border: #ffdd8d 1px solid; background-color: #fffbcc; color: #666666; padding: 0 9px; zoom: 1; }
+.tips span { color: #d94a4a; font-weight: bold; }
+.tab { border-bottom: 1px solid #d4d4d4; padding: 0 15px; line-height: 28px; height: 28px; }
+.tab ul { width: 550px; float: left; }
+.tab ul li { z-index: 1; border: #eee 1px solid; background-color: #eee; border-bottom: none; margin-bottom: -1px; margin-right: 4px; float: left; display: inline; text-align: center; position: relative; _width: 100px; }
+.tab ul li a { display: block; width: 88px; height: 27px; line-height: 27px; float: left; display: inline; color: #999; }
+.tab ul li.tabhover { z-index: 2; background: #fff; border: #d4d4d4 1px solid; border-bottom-color: #fff; }
+.tab ul li.tabhover a { color: #666; }
+.infotable td { height: 40px; line-height: 40px; border-bottom: 1px dashed #ccc }
+.infotable .red_btn, .infotable .red_btn2 { margin: 0px; padding: 2px 10px }
+	.infotable .red_btn2 { background: #D40104}
+.infotable input, .infotable textarea, .infotable select { padding: 4px; font-size: 15px; outline: none; text-shadow: 0px 1px 0px #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border: 1px solid #ccc; -webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; -o-transition: .3s ease-in-out; background: #fff url(images/dt-10.gif) repeat-x left top; }
+.infotable input:focus, .infotable textarea:focus, .infotable select:focus { border: 1px solid #fafafa; -webkit-box-shadow: 0px 0px 6px #007eff; -moz-box-shadow: 0px 0px 5px #007eff; box-shadow: 0px 0px 5px #007eff; }
+/*表单*/
+</style>
+</head>
+
+<body>
+<!--head--> {zzz:top}
+<div class="s_banner1"></div>
+<div class="path_box">
+  <div class="path_con">
+    <div class="pc_title"><img src="{zzz:tempath}images/2_08.png" /><span>会员中心</span><i>userinfo</i></div>
+    <div class="sub_title">会员中心</div>
+    <div class="pc_text"> 位置:会员中心</div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="contact_box">
+  <div class="contact_inf"> {zzz:template src=userleft.html}
+    <div class="talent rmain userinfo">
+      <div style="padding-top:50px;">
+        <table width="100%" class="ke-zeroborder" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td width="40%"><a href="?userface/" title="点击修改头像"><img width="200" height="200" src="[user:face]" /></a></td>
+              <td width="60%"><h4 style="font-size:18px;"> 欢迎您[user:truename] </h4>
+                <p style="line-height:30px;font-size:16px;"> 会员级别：[user:gname]<br />
+                  上次登陆时间：[user:lastlogintime] <br />
+                  上次登陆ip：[user:lastloginip]<br />
+                  登陆次数：[user:logincount]</p>
+                <div style="background:#eee; padding:10px;">个人签名： [user:desc]</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3> 帐户安全 </h3>
+      <div>
+         <table width="100%" class="infotable" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr> {if:isnul("[user:mobile]")}
+              <td width="10%"><img alt="" src="{zzz:plugpath}template/images/wrong.png" /></td>
+              <td width="80%"> 请设置正确手机号,我们会提醒您一些信息!</td>
+              <td width="10%"><a href="{zzz:sitepath}?user/useredit" class="red_btn2" >设置</a></td>
+              {else}
+              <td width="10%"><img alt="" src="{zzz:plugpath}template/images/right.png" /></td>
+              <td width="80%"> 您的手机号： [user:mobile]</td>
+              <td width="10%"><a href="{zzz:sitepath}?user/useredit" class="red_btn" >修改</a></td>
+              {end if} </tr>
+            <tr> {if:isnul("[user:email]")}
+              <td width="10%"><img alt="" src="{zzz:plugpath}template/images/wrong.png" /></td>
+              <td width="80%"> 请设置正确电子邮箱,我们会提醒您一些信息!</td>
+              <td width="10%"><a href="{zzz:sitepath}?user/useredit" class="red_btn2" >设置</a></td>
+              {else}
+              <td width="10%"><img alt="" src="{zzz:plugpath}template/images/right.png" /></td>
+              <td width="80%"> 您的邮箱： [user:email]</td>
+              <td width="10%"><a href="{zzz:sitepath}?user/useredit" class="red_btn" >修改</a></td>
+              {end if} </tr>
+            <tr> {if:isnul("[user:answer]")}
+              <td width="10%"><img alt="" src="{zzz:plugpath}template/images/wrong.png" /></td>
+              <td width="80%"> 您未设置密码找回问题和答案!</td>
+              <td width="10%"><a href="{zzz:sitepath}?user/userpwd" class="red_btn2" >设置</a></td>
+              {else}
+              <td width="10%"><img alt="" src="{zzz:plugpath}template/images/right.png" /></td>
+			  <td width="80%"> 您已经设置了安全问题 </td>
+              <td width="10%"><a href="{zzz:sitepath}?user/userpwd" class="red_btn" >修改</a></td>              
+              {end if} </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--foot--> {zzz:foot}
+</body>
+</html>

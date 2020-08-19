@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{zzz:sitetitle}{zzz:sitetitle2}</title>
+<meta name="Keywords" content="{zzz:sitekeys}" >
+<meta name="Description" content="{zzz:sitedesc}">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="applicable-device" content="mobile">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/framework.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/style.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/swipebox.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/animate.css">
+<script type="text/javascript" src="{zzz:tempath}js/jquery.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/jqueryui.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/framework.plugins.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/custom.js"></script>
+</head>
+
+<body>
+{zzz:top}
+<div class="slider-container material-box full-bottom">
+  <div class="homepage-slider"> {zzz:slidelist type=A}
+    <div>
+      <div class="homepage-slider-caption homepage-left-caption"> </div>
+      <img src="[slidelist:pic]" class="responsive-image" alt="[slidelist:title]"> </div>
+    {/zzz:slidelist} </div>
+</div>
+<div class="container material-box">
+  <div class="featured-project">
+    <h3>关于我们</h3>
+    <div class="enx">About US</div>
+    <div class="delimiter"></div>
+  </div>
+  {zzz:aboutlist sid=2}[aboutlist:desc]{/zzz:aboutlist}
+  <p class="no-bottom"></p>
+  <div class="more">  {zzz:sort sid=2}<a class="more-link" href="[sort:link]">了解详情</a>{/zzz:sort}</div>
+</div>
+<div class="container material-box no-bottom">
+  <div class="featured-project">
+    <h3>关于系统</h3>
+    <div class="enx">About CMS</div>
+    <div class="delimiter"></div>
+    <a href="#" class="next-featured"></a> <a href="#" class="prev-featured"></a>
+    <div class="featured-slider"> {zzz:navlist sid=1}
+      <div>
+        <div class="featured-item"> <a href="#"><img src="{zzz:tempath}images/advantage-[navlist:i].png" alt="img"></a>
+          <p><a href="[navlist:link]">[navlist:name]<br>
+            [navlist:enname] </a></p>
+        </div>
+      </div>
+      {/zzz:navlist} </div>
+  </div>
+  <div class="more"> <a class="share-link" href="#">更多介绍 <span>+</span></a> </div>
+  <div class="share">{zzz:navlist sid=1} <a href="[navlist:link]">[navlist:name]</a> {/zzz:navlist} </div>
+</div>
+<div class="content decoration"></div>
+<div class="container material-box">
+  <div class="featured-project">
+    <h3>公司动态</h3>
+    <div class="enx">COMPANY NEWS</div>
+    <div class="delimiter"></div>
+  </div>
+  <div class="no-bottom"> {zzz:content type=news num=5 order=order}
+    <div class="newsOne"> <a href="[content:link]">
+      <div class="name">[content:title]</div>
+      {if:[content:i]=1}
+      <div class="text">[content:desc]</div>
+      {end if}
+      <div class="info">时间：[content:date]</div>
+      </a> </div>
+    {/zzz:content} </div>
+  <div class="more"> {zzz:sort sid=5}<a class="more-link" href="[sort:link]">更多新闻</a>{/zzz:sort} <a class="share-link" href="#">新闻类别 <span>+</span></a> </div>
+  <div class="share">{zzz:navlist sid=5} <a href="[navlist:link]">[navlist:name]</a> {/zzz:navlist}</div>
+</div>
+<div class="container material-box homepage-gallery no-bottom">
+  <div class="featured-project">
+    <h3>产品展示</h3>
+    <div class="enx">SUCCESSFUL CASE</div>
+    <div class="delimiter"></div>
+  </div>
+  <ul class="gallery square-thumb">
+    {zzz:content type=product num=5 order=order}
+    <li> <a href="[content:link]"><img src="[content:pic]" alt="[content:title]" /></a>
+      <h4 class="center-text btbg">[content:title]</h4>
+    </li>
+    {/zzz:content}
+  </ul>
+  <div class="more"> {zzz:sort sid=8}<a class="more-link" href="[sort:link]">更多产品</a>{/zzz:sort}  <a class="share-link" href="#">产品类别 <span>+</span></a> </div>
+  <div class="share">{zzz:navlist sid=8} <a href="[navlist:link]">[navlist:name]</a> {/zzz:navlist} </div>
+</div>
+{zzz:foot}
+</body>

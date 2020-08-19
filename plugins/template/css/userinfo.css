@@ -1,0 +1,14 @@
+.tips { margin: 15px; line-height: 28px; border: #ffdd8d 1px solid; background-color: #fffbcc; color: #666666; padding: 0 9px; zoom: 1; }
+.tips span { color: #d94a4a; font-weight: bold; }
+.tab { border-bottom: 1px solid #d4d4d4; padding: 0 15px; line-height: 28px; height: 28px; }
+.tab ul { width: 550px; float: left; }
+.tab ul li { z-index: 1; border: #eee 1px solid; background-color: #eee; border-bottom: none; margin-bottom: -1px; margin-right: 4px; float: left; display: inline; text-align: center; position: relative; _width: 100px; }
+.tab ul li a { display: block; width: 88px; height: 27px; line-height: 27px; float: left; display: inline; color: #999; }
+.tab ul li.tabhover { z-index: 2; background: #fff; border: #d4d4d4 1px solid; border-bottom-color: #fff; }
+.tab ul li.tabhover a { color: #666; }
+.infotable td { height: 40px; line-height: 40px; border-bottom: 1px dashed #ccc; }
+.infotable .red_btn2 { margin: 0px; }
+.infotable input, .infotable textarea, .infotable select { padding: 4px; font-size: 15px; outline: none; text-shadow: 0px 1px 0px #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border: 1px solid #ccc; -webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; -o-transition: .3s ease-in-out; background: #fff url(images/dt-10.gif) repeat-x left top; }
+.infotable input:focus, .infotable textarea:focus, .infotable select:focus { border: 1px solid #fafafa; -webkit-box-shadow: 0px 0px 6px #007eff; -moz-box-shadow: 0px 0px 5px #007eff; box-shadow: 0px 0px 5px #007eff; }
+.contact_inf { width: 1060px; margin: 0 auto; min-height: 435px; margin-bottom: 30px }
+.telcode { width: 50px; }

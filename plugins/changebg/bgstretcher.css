@@ -1,0 +1,38 @@
+/*
+	Background Stretcher jQuery Plugin
+	?2011 ajaxBlender.com
+	For any questions please visit www.ajaxblender.com 
+	or email us at support@ajaxblender.com
+*/
+
+HTML {_background: url(/images/trans.gif) no-repeat fixed;}
+.bgstretcher-area { text-align: left; }
+.bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bgstretcher UL, .bgstretcher UL LI {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.bgstretcher {
+	background: black;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	_position: absolute; /*IE6 doesn't support fixed positioning*/
+	top: 0;
+	left: 0;
+}
+
+
+.close{ background:url(/images/closebox.png) no-repeat; width:30px; height:30px; display:block; float:right;text-indent:-9999px;}
+#show{background-color:#000;  position:absolute; left:50%; margin-left:-50px; top:0px; width:100px; height:24px; text-align:center; display:none; }
+.row{ background-color:#000; position:absolute; right:20px; top:0px; width:100px; float:left}
+.row a{ display:block;float:left; line-height:30px;}
+.row #toggleAnimation{ text-align:center; width:40px;}
+.row #prev{ background:url(/images/left.jpg); height:30px; width:30px;text-indent:-9999px;}
+.row #next{ background:url(/images/right.jpg);height:30px; width:30px;text-indent:-9999px; float:right}

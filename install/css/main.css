@@ -1,0 +1,82 @@
+@charset "utf-8";
+/**OpenWBS:install**/
+body { background: url("../images/leftbg.jpg") left 0px no-repeat; }
+#abody { }
+#bbody { }
+#header { position: absolute; top: 20px; left: 400px; color: #ECF3F9; width: 700px; height: 60px; }
+#header a { background: url("../images/header.png") no-repeat; display: block; width: 120px; height: 45px; float: left; margin: 10px; }
+#header a:nth-child(1) { background-position: 0px 0px }
+#header a:nth-child(1):hover { background-position: 0px -45px }
+#header a:nth-child(2) { background-position: -130px 0px }
+#header a:nth-child(2):hover { background-position: -130px -45px }
+#header a:nth-child(3) { background-position: -260px 0px }
+#header a:nth-child(3):hover { background-position: -260px -45px }
+#header a:nth-child(4) { background-position: -390px 0px }
+#header a:nth-child(4):hover { background-position: -390px -45px }
+#mbody { background: none; }
+#nobody { background: none; position: absolute; left: 400px; top: 220px; line-height: 26px; }
+#footer { position: fixed; bottom: 20px; left: 20px; color: #ECF3F9; }
+/***********/
+.leftpanel { float: left; width: 200px; height: 100%; }
+.mainpanel { padding-left: 400px; margin-top: 100px; }
+h2.STEP { position: absolute; left: 236PX; top: 277PX; color: #fff; font-size: 22px; width: 114px; text-align: center; text-shadow: rgba(ccc, 0.9) 0 1px 0px; font-family: Tahoma; font-weight: normal }
+.rightpanel { color: #666; line-height: 180%; padding-top: 5px; zoom: 1; max-width: 800px }
+.rightpanel h1 { font-size: 20px; line-height: 36px; font-weight: bold; border-bottom: 1px solid #eee; text-shadow: rgba(255,255,255, 0.9) 0 1px 0px; color: rgba(0,0,0,0.6); font-weight: bold; margin: 15px 0; padding:5px 0 }
+.rightpanel h3 { font-size: 14px; font-weight: bold; }
+.rightpanel p { text-indent: 25px; margin: 10px 0px; }
+.rightpanel a { color: #666 }
+.rightpanel h1 span { color: #aaa; font-size: 12px; font-weight: normal }
+.centerpanel{ margin-top:110px;}
+.submitarea { clear: both; padding: 15px 0px; margin-top:30px;}
+.submitarea input { border-radius: 3px; padding: 5px 15px; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; background: #fff; color: inherit; border: 1px solid #d2d2d2; cursor:pointer}
+.submitarea input:hover{background: #f5f5f5;}
+.submitarea input.button { background-color: #1ab394; color: #FFF; border-color: #1ab394; }
+.submitarea input.button:hover { background: #18a689 }
+/*安装步骤*/
+ul.step { padding: 24px 0px 0px 0px; }
+ul.step li { color: #efffff; display: block; font-size: 12px; font-weight: bold; height: 38px; line-height: 38px; padding: 0px 0px 0px 50px; }
+ul.step li b { }
+ul.step li { background: url("../images/icon/notinstall.png") 20px 50% no-repeat; }
+ul.step li.installed { background: url("../images/icon/installed.png") 20px 50% no-repeat; }
+ul.step li.installing { background: #025071 url("../images/icon/installing.png") 20px 50% no-repeat; }
+/**listTable**/
+.tabledata { border-top: 2px solid #B7B7B7; }
+.listTable { border-bottom: 0px; color: #424242;width: 100%; }
+.listTable tr.top th { height: 30px; line-height: 30px; font-weight: bold; padding: 3px 5px 2px 5px; text-align: left; }
+.listTable tbody>tr:nth-of-type(odd) { background-color: #f9f9f9; }
+.listTable tbody>tr:hover { background-color: #f5f5f5; }
+.listTable tr.data td { padding: 6px 5px 6px 5px; height: 20px; border-top: 1px solid #e7eaec; text-align: left; }
+.listTable tr:hover td { }
+.listTable .exinfo { color: #888; }
+/**infoTable**/
+.infoTable { }
+.infoTable .titletd { font-size: 12px; padding: 6px 5px 6px 0px; text-align: right; width: 100px; vertical-align: top; }
+.infoTable .infotd { padding: 6px 2px 6px 7px; }
+.infoTable label.normal { color: #A3C1F2; vertical-align: middle; }
+.step4_box { padding-bottom: 10px; }
+.cuetitle { color: #1574cd; font-weight: bold; padding: 0px 0px 10px 0px; }
+.db_type { padding: 0px 0px 0px 110px; }
+.db_type_1 { padding: 0px 10px 0px 0px; }
+.readbefore h5 { font-size: 16px; padding-bottom: 20px; }
+.readbefore p { padding: 0 0 5px 20px; color: #666 }
+.readbefore a { color: #666 }
+.licensebox { height: 500px; width: 100%; padding-right: 10px; overflow-y: scroll; }
+.license { background: #f5f5f5; padding: 10px; }
+.license ol li { list-style: decimal; }
+input.text { border-left: 1px solid #C7C8C8; border-top: 1px solid #C7C8C8; border-right: 1px solid #C7C8C8; border-bottom: 1px solid #C7C8C8; background: #ECF3F9; vertical-align: middle; }
+input.text { padding: 3px 2px 3px 3px!important; padding: 4px 2px 2px 3px; width: 200px; }
+input.text:hover { background: #FFFBD6; }
+/**解释说明***/
+.cuebox { color: #666; padding: 10px; height: 150px }
+.cuebox h2 { border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 6px; }
+.d_ok { color: #00be00; background: url("../images/icon/li_ok.gif") no-repeat 4px 50%; }
+.d_err { color: #ff3300; border: 1px solid #FEF0EC; background: url("../images/icon/li_err.gif") #FFFCFB no-repeat 4px 50%; }
+.d_loading { color: #706F6F; background: url("../images/icon/loading.gif") no-repeat 4px 50%; }
+.d_loading, .d_ok, .d_err { padding: 3px 4px 2px 24px; }
+/**加载中...**/
+.loading_big { color: #918E8E; background: url("../images/loading_blue_large.gif") 0px center no-repeat; padding: 5px 5px 5px 40px; margin: 5px; font-size: 14px; line-height: 34px; }
+/*****/
+
+.cue_ok { background: url("../images/icon/li_ok.gif") 4px center no-repeat; color: #007317; padding-left: 23px; }
+.cue_err { background: url("../images/icon/li_err.gif") 4px center no-repeat; color: #AE1F17; padding-left: 23px; }
+a.btn { padding: 10px 30px; margin: 10px 0 20px 0; background: #2085b7; color: #fff; border: 0px; text-decoration: none; text-align: center; }

@@ -1,0 +1,37 @@
+<div class="head_box">
+  <div class="head">
+    <div class="logo"><img src="{zzz:pclogo}" /></div>
+    <div class="head_right">
+  <div class="user">{zzz:userlogin}</div>
+      <div class="contact_search">
+        <div class="search">
+        <form method='post' name='product_myformsearch' action='{zzz:sitepath}search/' >
+          <input type="text" class="inp_text" name='keys' value="{zzz:keys}" />
+          <input class="inp_button"  type='submit'  value=""/>
+        </form>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="nav">
+        <ul class="nav_menu">
+          <li class="nav_menu-item {if:{zzz:tsid}=0}active{end if}"><a href="{zzz:sitepath}">首页</a></li> 
+          {zzz:navlist type=all num=6}
+          <li  class="nav_menu-item {if:[navlist:sid]={zzz:tsid}}active{end if}"><a href="[navlist:link]">[navlist:name] {if:[navlist:num]>0}<img src="{zzz:tempath}images/1_04.png"></a>
+            <div class="nav_submenu nav_on1" style="width:430px;">
+              <ul> {zzz:navlist1 sid=[navlist:sid]}              
+                <li class="nav_submenu-item"> <a href="[navlist1:link]">[navlist1:name]</a></li>
+                {/zzz:navlist1}
+              </ul>
+              <div class="nav_img" style="float:right;"><img src="[navlist:pic]"></div>
+            </div>
+            {else}
+            </a>
+            {end if} </li>
+          {/zzz:navlist}
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="clear"></div>
+</div>
+<div class="head_bg"></div>

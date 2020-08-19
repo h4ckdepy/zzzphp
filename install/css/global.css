@@ -1,0 +1,45 @@
+body{ color:#111; font-size:12px; font-family:Verdana, "Lucida Grande", Arial, Helvetica, sans-serif; line-height:160%;}
+body,div,ul,li,img,p,h1,h2,h3,h4,h5,h6,form{ margin:0px; padding:0px;}
+ul,li{ list-style:none;}
+a img{ border:0px;}
+a,a:visited{ color:#fff; text-decoration:none }
+a:hover{ color:#fff; }
+.clear { clear:both; }
+.hide{ display:none}
+.fl{ float:left;}.fr{ float:right;}
+.td{display:table-cell;vertical-align:top;*float:left;}
+/****width/height*****/
+.width250{ width:250px;}
+.width350{ width:350px;}
+/**********/
+.p3{padding:3px;}.pt3{padding-top:3px;}.pr3{padding-right:3px;}.pb3{padding-bottom:3px;}.pl3{padding-left:3px;}
+.p5{padding:5px;}.pt5{padding-top:5px;}.pr5{padding-right:5px;}.pb5{padding-bottom:5px;}.pl5{padding-left:5px;}
+.p8{padding:8px;}.pt8{padding-top:8px;}.pr8{padding-right:8px;}.pb8{padding-bottom:8px;}.pl8{padding-left:8px;}
+.p10{padding:10px;}.pt10{padding-top:10px;}.pr10{padding-right:10px;}.pb10{padding-bottom:10px;}.pl10{padding-left:10px;}
+.p15{padding:15px;}.pt15{padding-top:15px;}.pr15{padding-right:15px;}.pb15{padding-bottom:15px;}.pl15{padding-left:15px;}
+.p20{padding:20px;}.pt20{padding-top:20px;}.pr20{padding-right:20px;}.pb20{padding-bottom:20px;}.pl20{padding-left:20px;}
+.m5{margin:5px;}.mt5{margin-top:5px;}.mr5{margin-right:5px;}.mb5{margin-bottom:5px;}.ml5{margin-left:5px;}
+.m8{margin:8px;}.mt8{margin-top:8px;}.mr8{margin-right:8px;}.mb8{margin-bottom:8px;}.ml8{margin-left:8px;}
+.m10{margin:10px;}.mt10{margin-top:10px;}.mr10{margin-right:10px;}.mb10{margin-bottom:10px;}.ml10{margin-left:10px;}
+.m15{margin:15px;}.mt15{margin-top:15px;}.mr15{margin-right:15px;}.mb15{margin-bottom:15px;}.ml15{margin-left:15px;}
+.m20{margin:20px;}.mt20{margin-top:20px;}.mr20{margin-right:20px;}.mb20{margin-bottom:20px;}.ml20{margin-left:20px;}
+/****font*****/
+h1{ font-size:22px;}h2{ font-size:20px;}h3{ font-size:18px;}h4{ font-size:16px;}h5{ font-size:14px;}h6{ font-size:12px;}
+.font12{ font-size:12px;}.font13{ font-size:13px;}.font14{ font-size:14px;}.font15{ font-size:15px;}.font16{ font-size:16px;}
+.bold {font-weight:bold;}
+.normal {font-weight:normal;}
+.pointer {cursor:pointer;}
+
+/****color*****/
+.blue a , .blue a:visited { color:#157DFE;}
+.blue a:hover{ color:#2268E8; }
+.gray{ color:#666;}
+.gray a , .gray a:visited{color:#666;}
+.gray a:hover{ color:#1159ED; }
+.blackl{ color:#454545; }
+.blackl a , .blackl a:visited { color:#333;}
+.blackl a:hover{ color:#1164ED; }
+.yellow{ color:#FB6400;}
+.red{color:#F00;}
+.redh{ color:#AA0404;}
+.green{ color:#5ECB06;}

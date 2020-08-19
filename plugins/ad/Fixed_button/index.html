@@ -1,0 +1,36 @@
+<style type="text/css">
+.zzzad_mask{position: fixed;z-index: 19999;display:none;width: 100%;right: 0; bottom: 0;height:[height]px;_bottom: auto;_width: 100%;_position: absolute;
+_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+.float_layer{position: absolute;left: 0;top: 0;z-index: 1;width: 100%;height: 100%; background: url("[pic]")  center top no-repeat;}
+.float_content{ position: relative;z-index: 2;width: 1005px;height: 100%;margin: 0 auto;padding-left: 70px;}
+.float_bg, .float_close{ float: left;}
+.float_bg{position: relative;width: 820px;height:[height]px;margin-top: -27px;}
+.float_slogan {position: absolute;}
+.float_slogan{left: 0;bottom: 0;width: 800px;height: [height]px;cursor: pointer;}
+.float_close{width: 60px;margin-top: 30px;}
+.float_close a {display: block;width: 100px; height: 52px; margin-left: 7px; font-size:18px; color:#fff;-webkit-transition: all 400ms;}
+</style>
+<div class="zzzad_mask" id="zzzad_mask">
+    <div class="float_layer"></div>
+    <div class="float_content clearfix">
+        <div class="float_bg">
+            <a target="_blank" href="[link]" title='广告部分'>
+                <div class="float_slogan">[content]</div>
+            </a>
+        </div>
+        <div class="float_close">
+            <a onclick="closeFootAd()" href="#" title="我知道了">× 关闭</a>
+        </div>
+    </div>
+</div>
+<script>
+window.onload = function(){
+		document.getElementById("zzzad_mask").style.display="block";
+}
+//关闭底部广告
+function closeFootAd() {
+	document.getElementById("zzzad_mask").style.display="none";
+	set_cookie("footad","0"); 
+}
+   
+</script>

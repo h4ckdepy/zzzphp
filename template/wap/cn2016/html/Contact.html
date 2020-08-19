@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[about:pagetitle]-{zzz:sitetitle}</title>
+<meta name="description" content="[about:pagedesc]" />
+<meta name="Keywords" content="[about:pagekeys]" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="applicable-device" content="mobile">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/framework.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/style.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/swipebox.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="{zzz:tempath}css/animate.css">
+<script type="text/javascript" src="{zzz:tempath}js/jquery.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/jqueryui.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/framework.plugins.js"></script>
+<script type="text/javascript" src="{zzz:tempath}js/custom.js"></script>
+</head>
+
+<body>
+{zzz:top}
+<div class="maps material-box" id="allmap">{zzz:baidumap}</div>
+<div class="container material-box">
+  <div class="one-half-responsive">
+    <h4>给我们留言！</h4>
+    <p>你对我们公司有什么看法，有什么意见或者希望能与我们合作，请在下面留言。</p>
+    <div class="container no-bottom">
+    <div class="contact-form no-bottom">
+        <form action="{zzz:sitepath}gbook/?act=gbooking" method="post" class="contactForm" >
+          <div class="formFieldWrap">
+            <label class="field-title contactTextField" for="gtitle">标题:<span>（必填）</span></label>
+            <input type="text" name="gtitle" value="" class="contactField requiredField" required id="gtitle"/>
+          </div>
+          <div class="formFieldWrap">
+            <label class="field-title contactTextField" for="gname">姓名:<span>（必填）</span></label>
+            <input type="text" name="gname" value="" class="contactField requiredField" required id="gname"/>
+          </div>
+          <div class="formFieldWrap">
+            <label class="field-title contactTextField" for="gtel">电话: <span>（必填）</span></label>
+            <input type="text" name="gtel" value="" class="contactField requiredField" required id="gtel"/>
+          </div>
+          <div class="formFieldWrap">
+            <label class="field-title contactTextField" for="gemail">邮箱:</label>
+            <input type="text" name="gemail" value="" class="contactField" id="gemail"/>
+          </div>
+          <div class="formTextareaWrap">
+            <label class="field-title contactMessageTextarea" for="gContent">内容: <span>（必填）</span></label>
+            <textarea name="gContent" class="contactTextarea requiredField" required id="gContent"></textarea>
+          </div>     
+             <div class="formFieldWrap">
+            <label class="field-title contactTextField" for="CheckCode">验证码: <span>（必填）</span></label>
+            <input type="text" name="code" value="" class="contactField requiredField" required />
+            <img src='{zzz:sitepath}inc/imgcode.php' id='SeedImg' align='absmiddle' style='cursor:pointer;' border='0' onClick="this.src+='?'+Math.random();" />
+          </div>         
+          <div class="formSubmitButtonErrorsWrap">
+            <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="提交" />
+          </div>        
+        </form>      
+      </div>
+    </div>
+  </div>
+  <div class="decoration hide-if-responsive"></div>
+  <div class="contact-information one-half-responsive last-column">
+    <div class="container no-bottom">
+      <h4>联系我们</h4>
+      <p> <strong>公司名称</strong><br>
+        {zzz:company} </p>
+      <p> <strong>公司地址</strong><br>
+        {zzz:address} </p>
+      <p> <strong>我们的信息：</strong><br>
+        <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>联系人: {zzz:contact1} </a> <a href="tel:{zzz:mobile}" class="contact-call"><i class="fa fa-phone"></i>手机：{zzz:mobile}</a> <a href="tel:{zzz:tel1}" class="contact-text"><i class="fa fa-comments"></i>电话：{zzz:tel1}</a> <a href="mailto:{zzz:email}" class="contact-mail"><i class="fa fa-envelope"></i>邮箱：{zzz:email} </a> <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>传真：{zzz:fax} </a> </p>
+    </div>
+  </div></div>
+  <script>
+   var $ = jQuery.noConflict();
+  $('#imgcode').focus(function (){$('#SeedImg').click();$('.imgcode').show()});</script>        
+
+{zzz:foot}
+</body>

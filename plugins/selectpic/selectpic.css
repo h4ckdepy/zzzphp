@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+.tzSelect {height: 34px;line-height: 34px; display: inline-block; width: 100%; position: relative; }
+.tzSelect .selectBox { position: absolute; height: 100%; width: 100%; padding-left:12px;color: #666666; border:1px solid #e5e6e7; cursor: pointer; background:url(images/select_slice.png) right center no-repeat}
+.tzSelect .selectBox.expanded {color: #2c5667;border:1px solid #1ab394}
+.tzSelect .dropDown { position: absolute; top: 34px; left: 0; width: 100%;list-style: none; z-index:9; background:#fff}
+.tzSelect li { height: 75px; cursor: pointer; position: relative; border:1px solid #e5e6e7; padding:5px; text-align: center}
+.tzSelect li:hover { background-position: 50% -256px, 0 -85px, 0 0; }
+.tzSelect li span { padding:5px;}
+.tzSelect li i { color: #999999; display: block; font-size: 12px; }
+.tzSelect li img {  max-width:100px; max-height:60px}

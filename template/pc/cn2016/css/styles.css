@@ -1,0 +1,351 @@
+@charset "utf-8";
+body { margin: 0; padding: 0; height: 100%; font-size: 14px; font-family: Tahoma, Geneva, Microsoft YaHei, "微软雅黑"; color: #333; line-height: 24px }
+dd, dl, dt, li, ol, ul { margin: 0; padding: 0; list-style: none }
+input { font-size: 12px; font-family: Tahoma, Geneva, Microsoft YaHei, "微软雅黑"; vertical-align: middle }
+select { font-family: Arial; font-size: 12px }
+textarea { font-family: Tahoma, Geneva, Microsoft YaHei, "微软雅黑"; font-size: 12px }
+h3, h4, h5 { margin: 0; padding: 0; font-family: "微软雅黑"; font-size: 14px }
+.fl { float: left }
+.fr { float: right }
+.clear { clear: both }
+a { text-decoration: none; transition: all .2s linear 0s }
+:focus { outline: 0 }
+img { border: 0 }
+p { line-height: 24px }
+.head_bg { width: 100%; height: 100px }
+.head_box { width: 100%; height: 100px; background: url(../images/1_05.png) repeat-x; z-index: 10; padding-bottom: 5px; position: absolute; top: 0 }
+.head { width: 1060px; margin: 0 auto; position: relative }
+.logo { position: absolute; left: 0; top: 20px; z-index: 11; width: 200px; height: 76px }
+.head_right { float: right; padding-top: 25px; height: 75px }
+.contact_search { float: right }
+.head_right h3 { float: left; height: 14px; line-height: 14px; border-right: 1px solid #ddd; padding-right: 10px; margin: 5px 10px 0 0; font-weight: 400 }
+.head_right h3 a { color: #888 }
+.head_right h3 a:hover { color: #004d99 }
+.user { position: absolute; right: 0; top: 0; font-size: 12px }
+.search { float: left }
+.inp_text { float: left; background: url(../images/1_02.png) no-repeat; width: 98px; padding-left: 10px; line-height: 22px; height: 22px; overflow: hidden; border: none }
+.inp_button { float: left; background: url(../images/1_03.png) no-repeat; border: none; width: 24px; height: 22px; cursor: pointer }
+.nav { margin: 0 auto; color: #555; margin-top: 3px }
+.nav a { display: block; line-height: inherit; cursor: pointer; color: #555; font-weight: 400; font-family: "微软雅黑"; font-size: 14px }
+.nav_menu-item a { display: block; padding: 0 22px }
+.nav_menu-item a img { vertical-align: middle; margin-left: 5px }
+.nav_menu { line-height: 45px; font-weight: 700; text-transform: uppercase }
+.nav_menu-item { display: inline-block; position: relative; height: 45px }
+.nav_menu-item.active, .nav_menu-item:hover { border-bottom: 3px solid #004d99 }
+.nav_menu-item:hover .nav_submenu { display: block }
+.nav_submenu { font-weight: 300; text-transform: none; display: none; position: absolute; top: 48px; width: 430px; border: 1px solid #dedede; background: #fff; padding: 21px 15px 10px 10px }
+.nav_submenu ul { float: left; margin-top: 5px; margin-right: 17px; margin-bottom: 20px }
+.nav_img { float: right; margin: 10px 0 15px 0 }
+.nav_img p { margin: 0; padding: 0; line-height: 14px; text-align: center; font-size: 14px; color: #767676 }
+.nav_img img { width: 230px; height: 135px }
+.nav_submenu-item { display: block }
+.nav_submenu-item a { display: block; padding: 0 35px 0 25px; min-width: 100px; line-height: 30px; height: 30px; color: #555; font-size: 13px }
+.nav_submenu-item a:hover { color: #08529c; text-decoration: underline }
+.nav_on1 { position: absolute; left: -130px }
+.nav_on2 { position: absolute; left: -150px }
+.nav_on3 { position: absolute; left: -260px }
+.nav_on4 { position: absolute; left: -200px }
+.nav_on5 { position: absolute; left: -250px }
+.nav_on6 { position: absolute; left: -483px }
+.banner { width: 100%; height: 449px; position: relative }
+.in_business { width: 1060px; position: absolute; left: 50%; margin-left: -530px; z-index: 9; height: 386px }
+.in_business ul { width: 341px; height: 266px; border: 1px solid #fff; background: url(../images/1_30.png) repeat; float: right; margin-top: 96px; padding: 12px 10px 8px 10px; position: relative }
+.in_business ul li { float: left; font-size: 16px; margin-bottom: 10px }
+.ib1 { display: block; width: 168px; height: 81px; position: relative; background: url(../images/1_09.png) 22px 30px no-repeat #777a84; line-height: 81px; color: #fff }
+.ib1 span { margin-left: 60px }
+.ib2 { display: block; width: 168px; height: 81px; position: relative; background: url(../images/1_10.png) 22px 22px no-repeat #004d99; line-height: 81px; color: #fff; margin-left: 5px }
+.ib2 span { margin-left: 60px }
+.ib3 { display: block; width: 225px; height: 81px; position: relative; background: url(../images/1_11.png) 22px 20px no-repeat #2975c0; line-height: 81px; color: #fff }
+.ib3 span { margin-left: 60px }
+.ib4 { display: block; width: 110px; height: 81px; margin-left: 5px; text-align: center; position: relative; background: url(../images/1_12.png) center 13px no-repeat #777a84; line-height: 20px; color: #fff }
+.ib4 span { position: relative; top: 52px }
+.ib5 { display: block; width: 110px; height: 81px; text-align: center; position: relative; background: url(../images/1_13.png) center 13px no-repeat #004d99; color: #fff; line-height: 20px }
+.ib5 span { position: relative; top: 52px }
+.ib6 { display: block; width: 110px; height: 81px; margin-left: 5px; text-align: center; position: relative; background: url(../images/1_14.png) center 10px no-repeat #777a84; line-height: 20px; color: #fff }
+.ib6 span { position: relative; top: 52px }
+.ib7 { display: block; width: 110px; height: 81px; margin-left: 5px; text-align: center; position: relative; background: url(../images/1_15.png) center 13px no-repeat #004d99; color: #fff; line-height: 20px }
+.ib7 span { position: relative; top: 52px }
+.hf { background: #fff; filter: alpha(opacity=40)!important; -moz-opacity: .4!important; opacity: .4!important }
+.ib1 dd { width: 168px; height: 81px; position: absolute; top: 0; z-index: 10; background: #fff; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0 }
+.ib2 dd { width: 168px; height: 81px; position: absolute; top: 0; z-index: 10; background: #fff; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0 }
+.ib3 dd { width: 225px; height: 81px; position: absolute; top: 0; z-index: 10; background: #fff; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0 }
+.ib4 dd { width: 110px; height: 81px; position: absolute; top: 0; z-index: 10; background: #fff; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0 }
+.ib5 dd { width: 110px; height: 81px; position: absolute; top: 0; z-index: 10; background: #fff; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0 }
+.ib6 dd { width: 110px; height: 81px; position: absolute; top: 0; z-index: 10; background: #fff; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0 }
+.ib7 dd { width: 110px; height: 81px; position: absolute; top: 0; z-index: 10; background: #fff; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0 }
+.wy-mod-banner { width: 100%; margin-top: 0; height: 540px; position: relative; overflow: hidden }
+.wy-mod-banner img { width: auto }
+.wy-mod-banner .banners { width: 1920px; height: 540px; overflow: hidden; position: absolute; left: 50%; margin-left: -960px }
+.wy-mod-banner .banner { width: 1920px; height: 540px; overflow: hidden; position: absolute; left: 50%; margin-left: -960px }
+.wy-mod-banner .focus { width: 960px; margin: 0 auto; padding-top: 410px; text-align: center }
+.wy-mod-banner .focus a { text-decoration: none; z-index: 3; width: 20px; height: 20px; position: relative; display: inline-block; overflow: hidden; margin: 0; zoom: 1 }
+.wy-mod-banner .focus a .bg-m { z-index: 4; color: #fff; line-height: 40px; font-size: 40px; position: absolute; display: block; left: 2px; top: 6px; cursor: pointer; display: none }
+.wy-mod-banner .focus a .bg-b { background: url(../images/bt2.png) center center no-repeat; position: absolute; display: block; left: 0; top: 0; cursor: pointer; width: 20px; height: 20px }
+.wy-mod-banner .focus a .inner { background: url(../images/bt1.png) center center no-repeat; position: absolute; left: 0; top: 0; z-index: 9; opacity: 0; display: none\9; +display:none;
+width: 20px; height: 20px }
+.wy-mod-banner .focus a.on .inner, .wy-mod-banner .focus a:hover .inner { cursor: pointer; display: block; border: 0; -webkit-transition: opacity .3s ease-in-out; -ms-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; opacity: 1 }
+.wy-mod-banner .focus .hover .inner { display: block }
+.in_bynews { width: 100%; height: 38px; border-bottom: 1px solid #ddd; text-align: center; padding-top: 17px }
+.in_newsbox { width: 1060px; margin: 0 auto; padding: 30px 0 30px 0 }
+.in_news { float: left; width: 335px }
+.inf_head, .inf_head2, .inf_head3 { width: 335px; height: 35px; line-height: 35px }
+.inf_head h3 { float: left; font-weight: 400; padding-left: 27px; background: url(../images/1_16.jpg) left center no-repeat; font-size: 16px; color: #333 }
+.inf_head2 h3 { float: left; font-weight: 400; padding-left: 33px; background: url(../images/1_17.jpg) left center no-repeat; font-size: 16px; color: #333 }
+.inf_head3 h3 { float: left; font-weight: 400; padding-left: 27px; background: url(../images/1_20.jpg) left center no-repeat; font-size: 16px; color: #333 }
+.inf_head a, .inf_head2 a, .inf_head3 a { float: right; display: block; width: 29px; height: 35px; background: url(../images/1_18.jpg) left center no-repeat }
+.inf_head a:hover, .inf_head2 a:hover, .inf_head3 a:hover { background: url(../images/1_19.jpg) left center no-repeat }
+.inf_con { width: 335px; padding-top: 15px }
+.inf_title { border-bottom: 1px dashed #ddd; padding-bottom: 10px }
+.inf_title p { padding: 0; margin: 0; width: 335px; height: 170px; overflow: hidden }
+.inf_title p img { width: 335px; height: 170px }
+.inf_title h3 { font-weight: 400; font-size: 12px; color: #888; height: 30px; line-height: 30px }
+.inf_title h3 span { margin-right: 10px }
+.inf_title a { display: block; width: 335px; height: 30px; line-height: 30px; font-size: 14px; color: #00398e; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.inf_title a:hover { text-decoration: underline }
+.inf_list { padding-top: 5px }
+.inf_list dd { width: 315px; height: 30px; line-height: 30px; color: #333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.inf_list dd a { color: #555 }
+.inf_list dd a:hover { color: #00398e }
+.in_left { margin-left: 27px }
+.in_line { width: 1060px; margin: 0 auto; height: 20px; text-align: center; border-bottom: 1px solid #ddd; margin-bottom: 10px }
+.in_line img { position: relative; top: 10px; padding: 0 7px; background: #fff }
+.in_focus { width: 1060px; margin: 0 auto; margin-bottom: 50px }
+.in_fctitle { width: 190px; margin: 0 auto; height: 20px; border-bottom: 1px solid #ddd; text-align: center; margin-bottom: 10px }
+.in_fctitle span { padding: 0 20px; background: #fff; font-size: 16px; color: #888; position: relative; top: 7px }
+.in_focus dl { float: left; width: 100%; height: 75px; position: relative; height: 60px; border-right: 1px dashed #ddd; margin-top: 20px; padding-top: 5px }
+.in_focus dl dd { text-align: center; float: left; cursor: pointer; margin: 5px }
+.in_focus dl dd p { margin: 0; padding: 0; text-align: center }
+.in_focus dl dd span { display: block; font-size: 12px; height: 15px; line-height: 15px }
+.if_img0, .if_img1, .if_img2, .if_img3, .if_img4, .if_img5, .if_img6 { display: none; position: absolute; top: -170px; padding: 2px; border: 1px solid #ddd; background: #fff; width: 150px; height: 150px }
+.if_img0 span, .if_img1 span, .if_img2 span, .if_img3 span, .if_img4 span, .if_img5 span, .if_img6 span { position: absolute; bottom: -9px; text-align: center }
+.in_co { float: right; width: 179px; padding-top: 20px }
+.oa_login { width: 179px; height: 28px; margin-bottom: 10px }
+.oa_login a { display: block; width: 179px; height: 28px; background: #004d99; text-align: center; color: #fff }
+.oa_login a:hover { background: #014283 }
+.bottom_box { width: 100%; height: 228px; background: #676664!important; padding-top: 10px }
+.bottom { width: 1060px; margin: 0 auto }
+.bottom_nav { float: left }
+.bottom_nav dl { float: left; width: 100px; margin-right: 30px }
+.bottom_nav dl dt { color: #fff; font-size: 14px; font-weight: 700; line-height: 45px; height: 45px; overflow: hidden; border-bottom: 1px solid #999; margin-bottom: 10px }
+.bottom_nav dl dd a { display: block; font-size: 12px; color: #ddd; padding-left: 10px; height: 25px; line-height: 25px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis }
+.bottom_nav dl dd a:hover { color: #fff }
+.bottom_contact { float: right; padding-top: 25px }
+.bottom_contact h3 { color: #fff; font-size: 28px }
+.bottom_contact p { color: #ddd }
+.foot_box { width: 100%; height: 47px; line-height: 47px; background: #1e1e1e; font-size: 12px }
+.foot { width: 1060px; margin: 0 auto; color: #777 }
+.foot p { float: left; margin-left: 20px }
+.foot p span { font-family: Arial }
+.foot a { color: #6e6e6e }
+.foot a:hover { color: #fff }
+.link { float: left; position: relative; cursor: pointer; font-size: 12px }
+.lin_title { background: url(../images/1_08.jpg) no-repeat; width: 179px; height: 28px; line-height: 28px; padding-left: 10px; color: #888 }
+.lin_text { background: #fff; width: 177px; position: absolute; bottom: 25px; padding: 5px 0 10px 0; z-index: 99; border-left: 1px solid #ddd; border-top: 1px solid #ddd; border-right: 1px solid #ddd; z-index: 999 }
+.lin_text img { vertical-align: middle; margin-right: 5px }
+.lin_text a { width: 155px; display: block; height: 30px; line-height: 30px; color: #555; padding: 0 10px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis }
+.lin_text a:hover { background: #ddd; color: #555 }
+.s_banner1 { width: 100%; height: 300px; background: url(../images/banner_about.jpg) center center no-repeat }
+.s_banner2 { width: 100%; height: 300px; background: url(../images/banner_news.jpg) center center no-repeat }
+.s_banner3 { width: 100%; height: 300px }
+.s_banner4 { width: 100%; height: 300px; background: url(../images/banner_jlb.jpg) center center no-repeat }
+.s_banner5 { width: 100%; height: 300px; background: url(../images/10_01.jpg) center center no-repeat }
+.s_banner6 { width: 100%; height: 300px; background: url(../images/12_01.jpg) center center no-repeat }
+.s_banner7 { width: 100%; height: 300px; background: url(../images/esc.jpg) center center no-repeat }
+.s_banner8 { width: 100%; height: 300px; background: url(../images/jr.jpg) center center no-repeat }
+.s_banner9 { width: 100%; height: 300px; background: url(../images/xs.jpg) center center no-repeat }
+.s_banner10 { width: 100%; height: 300px; background: url(../images/sh.jpg) center center no-repeat }
+.path_box { width: 100%; height: 115px; background: url(../images/2_04.png) repeat-x; border-bottom: 1px solid #d7d7d7 }
+.path_con { width: 1060px; margin: 0 auto; height: 115px }
+.pc_title { float: left; width: 195px; height: 84px; background: url(../images/2_06.jpg) left bottom no-repeat; padding-top: 31px; line-height: 74px; color: #fff; padding-left: 5px; position: relative }
+.pc_title span { font-size: 22px; padding-left: 10px }
+.pc_title i { font-size: 14px; padding-left: 10px; position: absolute; left: 60px; top: 50px }
+.pc_title img { margin: 0 0 0 10px; vertical-align: middle }
+.sub_title { float: left; margin-left: 55px; padding-top: 31px; height: 84px; line-height: 84px; color: #454545; font-size: 24px }
+.sub_title img { max-height: 84px; }
+.pc_text { font-size: 12px; color: #7b7a7a; float: right; line-height: 70px }
+.pc_text a { color: #7b7a7a }
+.f_font { font-family: "宋体" }
+.f_color { color: #004d99 }
+.contact_inf { width: 1060px; margin: 0 auto; min-height: 435px; margin-bottom: 30px }
+.sub_list { float: left; width: 200px; background: #f5f5f5; padding: 10px 0 60px 0; margin-right: 55px }
+.sub_list dl dd { width: 200px; }
+.sub_list dl dd a { display: block; width: 149px; height: 53px; padding-left: 25px; margin: 0 auto; border-bottom: 1px solid #ddd; overflow: hidden; text-overflow: hidden; white-space: nowrap; color: #454545; font-size: 15px; background: url(../images/2_10.png) 10px center no-repeat; line-height: 53px }
+.sub_list dl dd:hover, .sub_list dl li:hover, .sub_on { background: url(../images/2_09.jpg) no-repeat }
+.sub_list dl dd:hover a, .sub_list dl .sub_on a { border: none; background: url(../images/2_11.png) 10px center no-repeat!important; color: #fff }
+.sub_list dl ul { }
+.sub_list dl ul li { }
+.sub_list dl ul li a { display: block; width: 120px; margin-left: 25px; height: 53px; padding-left: 25px; color: #454545; background: url(../images/2_10.png) 10px center no-repeat; border-bottom: 1px dashed #ddd; line-height: 53px }
+.sub_list dl li:hover a, .sub_list dl ul li.sub_on a { border: none; background: url(../images/2_11.png) 10px center no-repeat!important; color: #fff }
+.about { float: left; padding: 30px 0 120px 0; width: 800px; font-size: 14px }
+.course_title { padding-left: 55px }
+.event { float: left; width: 800px; padding: 30px 0 120px 0; position: relative }
+.event dl dt { float: left; width: 197px; height: 50px; position: relative; margin-top: 20px }
+.event dl dt h3 { height: 40px; line-height: 37px; position: absolute; z-index: 13; background: url(../images/3_02.jpg) no-repeat; width: 124px; padding: 0 63px 0 10px; overflow: hidden; text-align: center; color: #fff; white-space: nowrap; text-overflow: hidden }
+.event dl dd { float: left; width: 540px; padding-left: 30px; border-left: 3px solid #cbcbcb; padding-top: 15px; padding-bottom: 15px; position: relative; left: -14px }
+.event_con { width: 540px; background: #fff; border: 1px solid #eaeaea; position: relative; padding: 0 20px; font-size: 14px; line-height: 35px; box-shadow: 3px 3px 0 0 #efefef; min-height: 50px }
+.event_con h3 { position: absolute; left: -13px; top: 8px }
+.honor { float: left; padding: 0 0 120px 0; width: 800px; font-size: 14px; color: #706c6c }
+.honor p { color: #464646; font-size: 14px; line-height: 35px }
+.sub_right { width: 805px; float: left }
+.ib_con { width: 805px; height: 230px; margin: 0 auto; position: relative; padding-top: 30px }
+.ib_con .home_plist { clear: both; width: 805px; margin: 0 auto; padding-top: 15px }
+.ib_con .rollBox { clear: both; width: 805px; overflow: hidden }
+.ib_con .rollBox .LeftBotton { height: 16px; width: 26px; overflow: hidden; float: left; display: inline; margin: 22px 0 0 0; cursor: pointer; position: absolute; left: 745px; top: -5px; background: url(../images/4_12.jpg) no-repeat }
+.ib_con .rollBox .LeftBotton:hover { background: url(../images/4_15.jpg) no-repeat }
+.ib_con .rollBox .RightBotton { height: 16px; width: 26px; overflow: hidden; float: left; display: inline; margin: 22px 0 0 0; cursor: pointer; position: absolute; right: 5px; top: -5px; background: url(../images/4_16.jpg) no-repeat }
+.ib_con .rollBox .RightBotton:hover { background: url(../images/4_13.jpg) no-repeat }
+.ib_con .rollBox .Cont { float: left; width: 803px; overflow: hidden; margin-left: 1px }
+.ib_con .rollBox .ScrCont { width: 1000000px }
+.ib_con .rollBox .Cont .pic { float: left; width: 254px; margin: 0 7px 0 6px; height: 184px; position: relative; left: -1px; padding-bottom: 9px; background: url(../images/4_05.jpg) bottom center no-repeat }
+.ib_con .rollBox .Cont .pic dt { display: block; width: 254px; height: 175px; text-align: center; border: 1px solid #d6d3cc; padding: 3px; overflow: hidden }
+.ib_con .rollBox .Cont a:link, .rollBox .Cont a:visited { color: #fff; text-decoration: none; border: 0 }
+.ib_con .rollBox #List1, .rollBox #List2 { float: left }
+.ib_con .pic dd { position: absolute; z-index: 99; left: 4px; top: 119px; width: 233px; height: 40px; line-height: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 10px; background: url(../images/4_14.png) repeat }
+.ib_con .pic dd a { color: #fff; font-size: 14px; font-weight: 700 }
+.news_list { width: 800px; margin: 0 auto; padding-bottom: 30px }
+.news_list dl { width: 800px; line-height: 45px; height: 45px; border-bottom: 1px dashed #ddd }
+.news_list dd { float: left }
+.news_list dd a { display: block; width: 600px; height: 45px; line-height: 45px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #454545; padding-left: 20px; background: url(../images/4_17.png) 7px center no-repeat }
+.news_list dd a:hover { background: url(../images/4_18.png) 7px center no-repeat; color: #004d99 }
+.news_list dt { float: right; font-size: 13px; font-family: Arial; color: #888 }
+.page { width: 800px; height: 40px; text-align: center; margin-bottom: 30px }
+.page dl { width: 90px; margin: 0 auto }
+.page_down, .page_up { float: left; margin: 0 5px }
+.page_up a { display: block; width: 30px; height: 30px; background: url(../images/4_06.jpg) no-repeat }
+.page_down a { display: block; width: 30px; height: 30px; background: url(../images/4_07.jpg) no-repeat }
+.page_up a:hover { background: url(../images/4_08.png) no-repeat }
+.page_down a:hover { background: url(../images/4_09.jpg) no-repeat }
+.by_video { width: 800px; height: 500px; padding-top: 20px }
+.about_video { width: 770px; height: 445px; background: #f5f5f5; border-left: 20px solid #f5f5f5; border-top: 20px solid #f5f5f5; border-right: 20px solid #f5f5f5 }
+.video_title { width: 700px; margin: 0 auto; height: 40px; line-height: 40px; text-align: center; color: #454545; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.video_list { padding-bottom: 55px }
+.video_list dl dd { float: left; width: 143px; height: 87px; background: url(../images/5_01.jpg) no-repeat; margin-right: 14px; padding: 17px 0 0 4px; margin-bottom: 15px }
+.sn_title { width: 800px; text-align: center; background: #edf3f9; padding: 10px 0; margin-top: 20px }
+.sn_title h3 { width: 800px; height: 40px; line-height: 40px; font-size: 20px; color: #064994; overflow: hiddeen; text-overflow: ellipsis; white-space: nowrap }
+.sn_title p { padding: 0; margin: 0; height: 30px; line-height: 30px; overflow: hiddeen; text-overflow: ellipsis; white-space: nowrap; color: #7892ac; font-size: 12px }
+.sn_title p span { margin: 0 5px }
+.sn_text { padding: 10px 0 70px 0 }
+.newsarrows a { text-indent: -9999px; display: block; width: 45px; height: 45px; margin: 0 10px; margin-top: -60px; }
+.newsarrows .nolink { display: none }
+.newsnext { float: right; background: url(../images/arrows.png) -45px 0 no-repeat }
+.newsnext:hover { background-position: -45px -45px }
+.newsprev { float: left; background: url(../images/arrows.png) 0 0 no-repeat }
+.newsprev:hover { background-position: 0 -45px }
+
+.newsnext.none ,.newsprev.none{ display:none}
+.newscotent img { max-width: 800px; }
+.business { width: 800px; float: left }
+.business_title { width: 800px; padding-top: 30px }
+.business_title dl dd a { display: block; height: 45px; background: #8e939b; padding: 0 30px; float: left; line-height: 45px; margin: 0 5px; color: #fff; font-size: 15px }
+.business_title dl dd a:hover { background: #0767b7 }
+.bus_on { background: url(../images/7_04.png) bottom center no-repeat #0767b7!important;}
+.business_text { padding: 30px 0 30px 0 }
+.business_text dl { width: 800px; height: 175px; border-bottom: 1px solid #ddd; margin-bottom: 20px }
+.business_text dl dt { float: left; width: 280px; height: 150px; margin-right: 35px }
+.business_text dl dd { float: left; width: 485px }
+.business_text dl dd h3 a { display: block; width: 485px; height: 35px; line-height: 35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 18px; color: #00274d }
+.business_text dl dd h3 a:hover { text-decoration: underline }
+.business_text dl dd p { margin: 0; padding: 0; height: 50px; line-height: 25px; margin-top: 10px; overflow: hidden }
+.business_text dl dd h4 a { display: block; width: 80px; height: 30px; text-align: center; background: #0d4f90; color: #fff; line-height: 30px; font-size: 12px; font-weight: 400; float: right; margin-top: 15px }
+.business_text dl dd h4 a:hover { background: #023e79 }
+.atlas { padding-bottom: 30px; min-height: 435px; width: 805px; float: left }
+.zi_honor2 { display: block; padding-top: 20px }
+.zi_honor2 dd { float: left; width: 195px; text-align: center; padding: 2px; position: relative }
+.zi_honor2 .fav_btn { position: absolute; left: 0px; top: 160px; background: #333; color: #fff; width: 100%; opacity: 0;transition:0.5s;  -webkit-transition: 0.5s; padding:0px}
+.zi_honor2 .likes_btn{ position: absolute; left: 0px; top: 10px; height:25px;width: 100%; opacity: 0;transition:0.5s;  -webkit-transition: 0.5s; padding-left:25px}
+.zi_honor2 dd:hover .fav_btn, .zi_honor2 dd:hover .likes_btn{opacity: 1;}
+.zi_honor2 dd a.dda { display: table-cell; width: 190px; height: 176px; overflow: hidden; float: left; padding: 2px; background: #fff; border: 1px solid #ddd }
+.zi_honor2 dd a.dda img { width: 160px; }
+.zi_honor2 dd span { display: block; width: 160px; line-height: 45px; margin: 0 auto; font-size: 13px; word-break: keep-all; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #666 }
+.brandlist { width: 100%; margin: 0 auto; }
+.brandlist h2 { color: #3366cc; height: 24px; margin: 20px; font-size: 14px; }
+.brandlist li { float: left; margin: 10px; width: 179px; height: 230px; overflow: hidden; border: solid 1px #ddd; display: inline; }
+.brandlist li .subsummary { height: 24px; line-height: 24px; overflow: hidden; padding: 0 5px; border-top: solid 1px #ddd; background: #EFFBFF; text-align: center; }
+.brandlist li .subsummary a { font-size: 12px; text-decoration: none; color: #3366cc; }
+.ver_pic { width: 179px; height: 230px; background-color: #eee; text-align: center; position: relative; display: table-cell; vertical-align: middle; }
+.ver_pic .subpic {
+*position:absolute; top: 50%; left: 50%; }
+.ver_pic .subpic img {
+*position:relative; top: -50%; left: -50%; }
+.ver_pic .subpic img { max-width: 140px; min-width: 100px; width:expression(this.width > 140 ? "140px" : this.width);
+}
+.club { width: 800px; padding-top: 20px }
+.online { padding-top: 15px; min-height: 375px; padding-bottom: 40px }
+.drive { padding-top: 25px; width: 800px; padding-bottom: 50px }
+.drive h3 { width: 800px; height: 30px; line-height: 30px; text-align: center; color: #454545; font-size: 16px; overflow: hidden }
+.drive p { width: 800px; text-align: center; margin-bottom: 30px; overfow: hidden }
+.riadio { margin-right: 5px }
+.msg_table { font-size: 14px }
+.msg_table th { line-height: 40px; text-align: right; padding: 2px 0 0 2px; vertical-align: top; color: #666 }
+.msg_table td { line-height: 40px; text-align: left; padding: 2px 0 2px 5px }
+.msg_title { display: block; line-height: 25px; margin-bottom: 20px; padding: 5px 0; border: 1px solid #c6411e; background-color: #ff8665; padding-left: 20px; color: #fff }
+.red_btn, .red_btn2 { min-width: 70px; height: 30px; background-color: #e87708; cursor: pointer; margin-top: 20px; font-size: 14px; border: none; color: #fff; font-size: 14px; transition: all .2s linear 0s; font-family: "微软雅黑"; font-weight: 700 }
+.red_btn { background: #004d99; width: 74px; height: 40px; font-weight: 400; width: 650px }
+.red_btn:hover { background: #013e7b }
+.red_btn2 { background: #8f8f8f; color: #fff; margin-left: 20px; width: 74px; height: 25px; font-weight: 400 }
+.red_btn2:hover { background: #757575 }
+.tbox_200, .tbox_60 { width: 245px; height: 25px; line-height: 25px; padding-left: 3px; border: 1px solid #ccc; border-radius: 2px; font-size: 14px }
+.tbox_300 { width: 650px; height: 25px; line-height: 25px; padding-left: 3px; border: 1px solid #ccc; border-radius: 2px; font-size: 14px }
+.tbox_60 { width: 60px }
+.tbox_200:focus, .tbox_60:focus { border: 1px solid #999 }
+.tbox_h_100 { width: 95%; height: 150px; border: 1px solid #ccc; border-radius: 2px; font-size: 14px; transition: all .2s linear 0s; margin: 5px 0 }
+.tbox_h_100:focus { border: 1px solid #999; height: 150px }
+.red_zi { font-size: 12px; color: red }
+.talent { float: left; padding: 0 0 70px 0; width: 800px; font-size: 14px }
+.talent h3 { font-size: 18px; color: #054685; margin-bottom: 30px; margin-top: 30px }
+.talent_text dl { border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 20px }
+.talent_text dl dt { float: left; width: 200px; text-align: center }
+.talent_text dl dd { width: 580px; height: 200px; margin-left: 20px; display: table-cell; vertical-align: middle }
+.job { float: left; padding: 30px 0 30px 0; width: 800px; font-size: 14px; color: #555 }
+.subNavBox { width: 800px; padding-bottom: 50px }
+.subNav { cursor: pointer; height: 45px; line-height: 45px; padding-left: 10px; border-top: 2px solid #004d99; font-size: 16px; margin-bottom: 15px; background: url(../images/11_01.png) 760px 12px no-repeat; color: #454545; font-weight: 700 }
+.subNav:hover { color: #005db8 }
+.currentDd { color: #454545 }
+.currentDt { background-image: url(../images/12_03.png) }
+.navContent { display: none; padding: 0 10px 15px 10px; position: relative }
+.navContent table tr { padding-bottom: 10px }
+.navContent table tr th { vertical-align: top }
+.navContent a { position: absolute; right: 5px; top: -45px; color: #888; font-size: 12px; font-family: Arial }
+.sub_text { width: 805px; height: 45px; line-height: 45px; font-size: 15px; color: #fff; text-align: center; margin-top: 35px; overflow: hidden; background: #004d99 }
+.contact { float: left; padding: 30px 0 70px 0; width: 800px; font-size: 14px; color: #706c6c }
+.contact .online { padding-top: 15px; min-height: 375px; padding-bottom: 40px }
+.contact .msg_table { font-size: 14px }
+.contact .msg_table th { line-height: 40px; text-align: right; padding: 2px 10px 0 2px; vertical-align: top; color: #666 }
+.contact .msg_table td { line-height: 40px; text-align: left; padding: 2px 0 2px 5px }
+.contact .msg_title { display: block; line-height: 25px; margin-bottom: 20px; padding: 5px 0; border: 1px solid #c6411e; background-color: #ff8665; padding-left: 20px; color: #fff }
+.contact .red_btn, .contact .red_btn2 { min-width: 70px; height: 30px; background-color: #e87708; cursor: pointer; margin-top: 20px; font-size: 14px; border: none; color: #fff; font-size: 14px; border-radius: 3px; transition: all .2s linear 0s; font-family: "微软雅黑"; font-weight: 700 }
+.contact .red_btn { background: #004d99; width: 74px; height: 25px; font-weight: 400 }
+.contact .red_btn:hover { background: #013e7b }
+.contact .red_btn2 { background: #8f8f8f; color: #fff; margin-left: 20px; width: 74px; height: 25px; font-weight: 400 }
+.contact .red_btn2:hover { background: #757575 }
+.contact .tbox_200, .tbox_60 { width: 300px; height: 25px; line-height: 25px; padding-left: 3px; border: 1px solid #ccc; border-radius: 2px; font-size: 14px }
+.contact .tbox_60 { width: 60px }
+.contact .tbox_200:focus, .contact .tbox_60:focus { border: 1px solid #999 }
+.contact .tbox_h_100 { width: 95%; height: 150px; border: 1px solid #ccc; border-radius: 2px; font-size: 14px; transition: all .2s linear 0s; margin: 5px 0 }
+.contact .tbox_h_100:focus { border: 1px solid #999; height: 150px }
+.contact .red_zi { font-size: 12px; color: red }
+.hot_job { float: left; padding: 30px 0 0 0; width: 800px; font-size: 14px; color: #555 }
+.hot_job table { margin-bottom: 30px }
+.hot_job table tr th { background: #1958a5; color: #fff; padding: 0 5px }
+.hot_job table tr td { text-align: center; padding: 0 5px }
+.job_td1 a { color: #434343; display: block; text-align: left; width: 180px; height: 60px; line-height: 60px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: 10px }
+.job_td2 a { color: #666; display: block; text-align: left; width: 490px; height: 60px; line-height: 60px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.job_td3 a { color: #666; display: block; width: 90px; height: 60px; line-height: 60px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.hot_job table tr:hover td { background: #e0e9f5 }
+.hot_job table tr:hover td a { color: #073c7e }
+.job_details { float: left; padding: 30px 0 30px 0; width: 800px; font-size: 14px; color: #555 }
+.job_inf { margin-bottom: 30px }
+.job_inf table { border-top: 1px solid #ddd; border-left: 1px solid #ddd }
+.job_inf table tr th { background: #f5f5f5; color: #333; padding: 0 10px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; font-weight: 400 }
+.job_inf table tr td { border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 0 10px }
+.job_submit table { border: 1px solid #ddd; width: 800px; height: 60px; background: #f5f5f5 }
+.job_submit table tr td select { width: 180px; height: 30px; line-height: 30px; color: #555; cursor: pointer }
+.job_submit table tr td { padding: 0 10px }
+.submit input { width: 83px; height: 30px; cursor: pointer; background: url(../images/submit.png) no-repeat; border: none }
+.runtime { margin-top: -30px }
+.tag { background: #eee; padding: 10px; color: #eee; }
+.tag span { margin-right: 20px; color: #f00; font-weight: bold; }
+.tag a { padding: 3px 12px; border: 1px solid #eee; color: #666; }
+.tag a:hover { border: 1px solid #fff; background: #000; color: #fff }
+.downs { padding: 5px 8px; border: 1px solid #eee; color: #06C; margin: 0 3px; }
+.downs:hover { background: #06C; color: #fff }
